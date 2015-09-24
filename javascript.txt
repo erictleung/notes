@@ -1,4 +1,4 @@
-# Javascript Notes
+// Javascript Notes
 
 // strings
 var name = "Joe";
