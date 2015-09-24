@@ -1,0 +1,7 @@
+# Javascript Notes
+
+// strings
+var name = "Joe";
+name.length; // get length of string
+name[0]; // get "first" element of string
+name[name.length - 1]; // get last element of string
