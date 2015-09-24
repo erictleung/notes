@@ -1,14 +1,8 @@
 # git Notes
 
-- Stop tracking file
+# removing files
+git rm --cached <filename> # stop tracking file
 
-```
-git rm --cached <filename>
-```
-
-- Dealing with remotes
-
-```
+# dealing with remotes
 git remote -v # looking at all remotes
 git remote rm <remote_name> # remove remote
-```
