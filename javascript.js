@@ -18,3 +18,8 @@ sampleArray.pop(); // remove and return last element
 sampleArray.push(42); // "push" data to last element
 sampleArray.shift(); // remove first element
 sampleArray.unshift("Joe"); // add data to first element
+
+// functions
+function ourFunction(a, b) {
+    return a - b;
+};
