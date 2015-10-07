@@ -7,3 +7,9 @@ var num2 = 20 // declaring variable
 
 num2 += 5 // increment by 5
 num2 -= 5 // decrement by 5
+
+// function definitions
+def max(x: Int, y: Int): Int = {
+  if (x > y) x
+  else y
+}
