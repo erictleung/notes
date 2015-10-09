@@ -8,3 +8,7 @@ open -n -a Application
 
 # time out commands if they take too long (command doesn't natively exist on MacOS)
 timeout 5 top # time out after 5 seconds
+
+# show line numbers in less
+echo "Oregon Health &
+Science University" | less -N
