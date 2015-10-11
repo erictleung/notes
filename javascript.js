@@ -9,6 +9,7 @@ name[name.length - 1]; // get last element of string
 // numbers
 var number = 4; // set number
 var other = (4 * 2) + 4; // combining operations
+Math.random(); // creates floating point num 0 (incl) to 1 (excl)
 
 // arrays
 var sampleArray = ["Joe", 42]; // holds different data
@@ -21,5 +22,6 @@ sampleArray.unshift("Joe"); // add data to first element
 
 // functions
 function ourFunction(a, b) {
+    // do stuff here
     return a - b;
 };
