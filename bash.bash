@@ -10,5 +10,10 @@ open -n -a Application
 timeout 5 top # time out after 5 seconds
 
 # show line numbers in less
-echo "Oregon Health &
-Science University" | less -N
+echo "Neque porro quisquam
+est qui dolorem" | less -N
+
+# wrap less output
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit \
+amet volutpat diam. Curabitur eget nibh convallis, condimentum urna vehicula, \
+posuere turpis." | less -S
