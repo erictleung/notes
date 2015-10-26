@@ -13,3 +13,6 @@ print [x for x in randList if toFind in x]
 with open("filename.txt", "r") as fh:
     data = fh.readline() # read line by line
     # data = fh.read() # read entire file
+
+# reload local package if modified
+reload(package)
