@@ -17,3 +17,7 @@ est qui dolorem" | less -N
 echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit \
 amet volutpat diam. Curabitur eget nibh convallis, condimentum urna vehicula, \
 posuere turpis." | less -S
+
+# sort by human numeric ordering
+printf "1\n2\n3\n14\n5\n12" | sort # not what I want
+printf "1\n2\n3\n14\n5\n12" | sort -k 1n # what I want
