@@ -16,3 +16,8 @@ with open("filename.txt", "r") as fh:
 
 # reload local package if modified
 reload(package)
+
+# check if file/directory exists
+import os.path
+os.path.isfile(FILENAME) # tests specifically files
+os.path.exists(ANYTHING) # tests files and directories
