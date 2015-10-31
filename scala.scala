@@ -13,3 +13,10 @@ def max(x: Int, y: Int): Int = {
   if (x > y) x
   else y
 }
+
+// read from file
+import io.Source
+val source = Source.fromFile("FILENAME")
+val lines = source.getLines // creates iterator
+val allArray = source.getLines.toArray // create array of input
+val lineStr = source.getLines.mkString // make input into one string
