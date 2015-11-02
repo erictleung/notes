@@ -20,3 +20,9 @@ val source = Source.fromFile("FILENAME")
 val lines = source.getLines // creates iterator
 val allArray = source.getLines.toArray // create array of input
 val lineStr = source.getLines.mkString // make input into one string
+
+// write to file using Java libraries
+import java.io.PrintWriter
+val out = new PrintWriter("OUTPUT.txt")
+out.println(lineStr)
+out.close()
