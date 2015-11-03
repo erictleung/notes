@@ -25,3 +25,10 @@ function ourFunction(a, b) {
     // do stuff here
     return a - b;
 };
+
+// javascript object
+var car = {
+  "wheels":4,
+  "engines":1,
+  "seats":5
+};
