@@ -14,6 +14,14 @@ def max(x: Int, y: Int): Int = {
   else y
 }
 
+// nested functions
+def time2(x: Int) = {
+
+  def times(a: Int, b: Int) = a * b
+
+  times(2, x) // automatically returns result
+}
+
 // read from file
 import io.Source
 val source = Source.fromFile("FILENAME")
