@@ -34,3 +34,9 @@ import java.io.PrintWriter
 val out = new PrintWriter("OUTPUT.txt")
 out.println(lineStr)
 out.close()
+
+// compressed `for` loop
+for (i <- 1 to 3; j <- 1 to 3) print((10 * i + j) + " ")
+
+// `for` loop comprehension to return collection of values
+for (i <- 1 to 10) yield i % 3
