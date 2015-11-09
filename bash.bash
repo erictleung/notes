@@ -24,3 +24,9 @@ printf "1\n2\n3\n14\n5\n12" | sort -k 1n # what I want
 
 # enables trusted X11 forwarding
 ssh -Y use@sample.com
+
+# sneaky way of putting comments in multi-line commands using back-ticks
+printf "txt\tfoo\nbaz\ttar\ntxt\tbar\n" `# create a two column list` | \
+    awk '{ if ($1 > $2) print $2 "\t" $1; else print $1 "\t" $2 }' `# order` | \
+    sort `# order by row` | \
+    uniq `# take unique rows only`
