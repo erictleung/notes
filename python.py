@@ -21,3 +21,9 @@ reload(package)
 import os.path
 os.path.isfile(FILENAME) # tests specifically files
 os.path.exists(ANYTHING) # tests files and directories
+
+# create generator with yield command
+def createGenerator():
+    mylist = range(3)
+    for i in mylist:
+        yield i * i
