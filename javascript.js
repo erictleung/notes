@@ -6,6 +6,11 @@ name.length; // get length of string
 name[0]; // get "first" element of string
 name[name.length - 1]; // get last element of string
 
+var longString = "Here is a sentence.";
+longString.split(" "); // split by spaces
+var joinMe = ["Na ", "Na ", "Na ", "Na ", "Batman!"];
+joinMe.join(" "); // join together with spaces
+
 // numbers
 var number = 4; // set number
 var other = (4 * 2) + 4; // combining operations
