@@ -30,3 +30,6 @@ printf "txt\tfoo\nbaz\ttar\ntxt\tbar\n" `# create a two column list` | \
     awk '{ if ($1 > $2) print $2 "\t" $1; else print $1 "\t" $2 }' `# order` | \
     sort `# order by row` | \
     uniq `# take unique rows only`
+
+# time command execution
+time python -c "print 'hello, world!'"
