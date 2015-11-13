@@ -33,3 +33,6 @@ printf "txt\tfoo\nbaz\ttar\ntxt\tbar\n" `# create a two column list` | \
 
 # time command execution
 time python -c "print 'hello, world!'"
+
+# secure copy files between local and host
+scp file1 user@host.com:~/Downloads/
