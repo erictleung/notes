@@ -38,8 +38,8 @@ time python -c "print 'hello, world!'"
 scp file1 user@host.com:~/Downloads/
 
 # special parameters in bash
-# https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html
-# e.g. 'echo $?' - returns exit status of last executed foreground pipeline
+## https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html
+## e.g. 'echo $?' - returns exit status of last executed foreground pipeline
 
 # arithmetic expressions of integers $((EXPR)) or expr
 # Reference: http://tldp.org/LDP/abs/html/arithexp.html
@@ -51,3 +51,7 @@ num5=$(($num1 + $num2)); echo $num5
 (( num1 += 1 )); echo $num1 # returns 3
 ## expr command
 znum=`expr 4 + 2`; echo $znum
+
+# shift command - shifts parameter variables e.g. $1, $2 by given number
+## e.g. shift 2 # shift parameter variables by 2
+## e.g. shift # shifth parameter variables by 1
