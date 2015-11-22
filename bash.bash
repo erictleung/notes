@@ -40,3 +40,14 @@ scp file1 user@host.com:~/Downloads/
 # special parameters in bash
 # https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html
 # e.g. 'echo $?' - returns exit status of last executed foreground pipeline
+
+# arithmetic expressions of integers $((EXPR)) or expr
+# Reference: http://tldp.org/LDP/abs/html/arithexp.html
+## double paraentheses
+num1=2
+num2=3
+num5=$((num1 + num2)); echo $num5
+num5=$(($num1 + $num2)); echo $num5
+(( num1 += 1 )); echo $num1 # returns 3
+## expr command
+znum=`expr 4 + 2`; echo $znum
