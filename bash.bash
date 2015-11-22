@@ -36,3 +36,7 @@ time python -c "print 'hello, world!'"
 
 # secure copy files between local and host
 scp file1 user@host.com:~/Downloads/
+
+# special parameters in bash
+# https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html
+# e.g. 'echo $?' - returns exit status of last executed foreground pipeline
