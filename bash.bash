@@ -55,3 +55,13 @@ znum=`expr 4 + 2`; echo $znum
 # shift command - shifts parameter variables e.g. $1, $2 by given number
 ## e.g. shift 2 # shift parameter variables by 2
 ## e.g. shift # shifth parameter variables by 1
+
+# writing functions two ways
+## Version 1
+hello() {
+    echo "Hello, world";
+}
+## Version 2
+function helloAlso {
+    echo "Hello, again";
+}
