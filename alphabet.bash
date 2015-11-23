@@ -17,6 +17,7 @@ cp
 
 ## D
 df
+du
 
 ## E
 echo
@@ -62,7 +63,9 @@ mv
 
 
 ## P
+parallel
 ping
+printf
 pwd
 
 ## Q
@@ -71,6 +74,7 @@ pwd
 ## R
 rm
 rmdir
+run
 
 ## S
 scp
