@@ -1,7 +1,7 @@
 # bash Notes
 
 # cd to previous directory
-cd - 
+cd -
 
 # open new instance of application
 open -n -a Application
@@ -65,3 +65,8 @@ hello() {
 function helloAlso {
     echo "Hello, again";
 }
+
+# brace expansion
+echo a{p,c,d,b}e # ape ace ade abe
+echo {1..5} # 1 2 3 4 5
+echo {1..10..3} # 1 4 7 10
