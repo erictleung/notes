@@ -22,3 +22,22 @@ git reset HEAD^
 
 # uncommit and throw away changes
 git reset --hard HEAD^
+
+# undo git add of a file
+git reset file-mistake.txt
+
+# unstage all uncommitted changes
+git reset
+
+# revert git repo to previous commit for exploration
+git checkout SHA_HASH_CODE
+
+# make commits in previous commit
+git checkout -b SHA_HASH_CODE
+
+# remove local/untracked file
+git clean -f -n # tell you what will be removed (-n)
+git clean -f # remove all files untracked
+git clean -fd # want to remove directories as well
+git clean -fX # want to remove only ignored files
+git clean -fx # want to remove both ignored and non-ignored files
