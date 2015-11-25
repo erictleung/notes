@@ -41,3 +41,7 @@ git clean -f # remove all files untracked
 git clean -fd # want to remove directories as well
 git clean -fX # want to remove only ignored files
 git clean -fx # want to remove both ignored and non-ignored files
+
+# easily "stash" away commits to use later
+git stash # stash away commits and changes
+git stash apply # un-stash commits and changes
