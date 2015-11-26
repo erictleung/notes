@@ -13,6 +13,7 @@ git remote rm example-remote # remove remote
 
 # squash commit with last commit and use new message
 git commit --amend -m "new message here"
+git commit --amend # keep previous commit message
 
 # uncommit last commit but keep all changes
 git reset --soft HEAD^
