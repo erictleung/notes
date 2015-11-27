@@ -1,5 +1,8 @@
 // Javascript Notes
 
+// print text
+console.log("Hello, world!");
+
 // strings
 var name = "Joe";
 name.length; // get length of string
