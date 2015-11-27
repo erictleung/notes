@@ -56,3 +56,7 @@ var car = {
   "engines":1,
   "seats":5
 };
+
+// repeat characters
+var n = 5;
+Array(n+1).join("-") // n+1 because joining inserts into spaces of array
