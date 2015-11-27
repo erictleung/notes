@@ -49,3 +49,8 @@ git stash apply # un-stash commits and changes
 
 # squashing multiple commits into one
 git rebase -i HEAD~n # where n is the last n commits made
+
+# syncing a fork
+git fetch upstream # given an upstream has been set up
+git checkout master
+git merge upstream/master
