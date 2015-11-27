@@ -50,6 +50,11 @@ git stash apply # un-stash commits and changes
 # squashing multiple commits into one
 git rebase -i HEAD~n # where n is the last n commits made
 
+# configuring a remote for a fork
+git remote -v # look at current config remote repos
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+git remote -v # verify added remote
+
 # syncing a fork
 git fetch upstream # given an upstream has been set up
 git checkout master
