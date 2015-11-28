@@ -59,3 +59,6 @@ git remote -v # verify added remote
 git fetch upstream # given an upstream has been set up
 git checkout master
 git merge upstream/master
+
+# use git to help find trailing whitespace
+git diff --check
