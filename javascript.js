@@ -18,6 +18,8 @@ joinMe.join(" "); // join together with spaces
 var number = 4; // set number
 var other = (4 * 2) + 4; // combining operations
 Math.random(); // creates floating point num 0 (incl) to 1 (excl)
+Math.floor(1.55); // takes the floor of a number (e.g. returns 1)
+Math.ceil(1.55); // takes the ceiling of a number (e.g. returns 2)
 
 // arrays
 var numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // number array
