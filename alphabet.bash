@@ -96,6 +96,7 @@ top
 ## U
 unalias
 uniq
+uptime
 
 ## V
 vim
