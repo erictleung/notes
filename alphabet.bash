@@ -8,6 +8,7 @@ awk
 bzip2
 
 ## C
+cal # displays a calendar
 cat
 cd
 chmod
@@ -57,7 +58,8 @@ more
 mv
 
 ## N
-
+nano
+ncal # displays a side-ways calendar
 
 ## O
 
