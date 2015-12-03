@@ -14,6 +14,7 @@ cd
 chmod
 chown
 clear
+column # columnate lists
 cp
 
 ## D
