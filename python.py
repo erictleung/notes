@@ -32,3 +32,10 @@ def createGenerator():
 # clone instead of point to a set object
 setA = set([1, 2, 3, 4])
 setB = set(setA)
+
+# unit testing with unittest
+def fun(x):
+    return x + 1
+class TestAddingMethod(unittest.TestCase):
+    def test_three(self):
+        self.assertEqual(fun(3), 4)
