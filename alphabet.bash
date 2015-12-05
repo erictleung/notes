@@ -63,7 +63,7 @@ nano
 ncal # displays a side-ways calendar
 
 ## O
-
+open
 
 ## P
 parallel
