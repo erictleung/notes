@@ -76,3 +76,12 @@ convert original.png -resize 64x64 resized.png # use aspect ratio but best fit
 
 # make directory and its intermediate directories along the way
 mkdir -p directories/in/between/will/be/made
+
+# change permissions
+## r w x
+## 4 2 1
+## OWNER, GROUP, WORLD
+## Users = u, Group = g, Others = o, All = a
+chmod +x file.txt # add execution permission to user
+chmod 202 file.txt # owner write, world write
+chmod a+x file.txt # all execution permissions to everyone
