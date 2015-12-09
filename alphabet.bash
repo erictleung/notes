@@ -23,10 +23,11 @@ du
 
 ## E
 echo
+emacs # text editor
 export
 
 ## F
-
+file # determine file type
 
 ## G
 grep
@@ -81,7 +82,9 @@ run
 
 ## S
 scp
+screen # terminal emulation
 sed
+shutdown
 sleep
 sort
 source
@@ -93,6 +96,7 @@ sudo
 tail
 tar
 time
+tmux # terminal multiplexer
 touch
 top
 
@@ -100,12 +104,16 @@ top
 unalias
 uniq
 uptime
+users # list current users
 
 ## V
+vi # text editor
 vim
 
 ## W
 wc
+whatis # searches for short description of command
+which # local program file in user's path
 whoami
 wget
 
