@@ -2,7 +2,7 @@
 
 # for loop
 for (i in 1:10) {
-    print(i) 
+    print(i)
 }
 
 # order elements by length of string
@@ -17,3 +17,10 @@ add2 <- function(n) {
 # find number of levels in a factor variable
 ex_factor <- factor(x = c(1, 2, 1, 1, 1, 2, 2, 1))
 nlevels(ex_factor)
+
+# run R script from command line
+# Rscript foo.r
+
+# write to standard output
+cat("Hello, world!\n")
+writeLines("Hello, again!")
