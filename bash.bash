@@ -85,3 +85,9 @@ mkdir -p directories/in/between/will/be/made
 chmod +x file.txt # add execution permission to user
 chmod 202 file.txt # owner write, world write
 chmod a+x file.txt # all execution permissions to everyone
+
+# extract first line of file, replace 1 with nth line you want to extract
+sed '1q;d' file.txt
+
+# remove first 3 lines from file, replace 3 with n-lines to be removed
+sed 1,3d file.txt
