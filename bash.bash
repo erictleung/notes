@@ -94,3 +94,9 @@ sed 1,3d file.txt
 
 # concatenate files together using parts of another, minus sign is key
 sed 1,3d file1.txt | cat - file2.txt
+
+# loop through files in current directory
+for f in *;
+do
+    echo $f;
+done
