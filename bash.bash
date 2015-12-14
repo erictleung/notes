@@ -22,8 +22,10 @@ posuere turpis." | less -S
 printf "1\n2\n3\n14\n5\n12" | sort # not what I want
 printf "1\n2\n3\n14\n5\n12" | sort -k 1n # what I want
 
-# enables trusted X11 forwarding
-ssh -Y use@sample.com
+# enables X11 forwarding
+ssh -X use@sample.com # just X11 forwarding
+ssh -Y use@sample.com # trusted
+echo $DISPLAY # test remote display
 
 # sneaky way of putting comments in multi-line commands using back-ticks
 printf "txt\tfoo\nbaz\ttar\ntxt\tbar\n" `# create a two column list` | \
