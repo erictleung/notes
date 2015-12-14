@@ -24,3 +24,13 @@ nlevels(ex_factor)
 # write to standard output
 cat("Hello, world!\n")
 writeLines("Hello, again!")
+
+# save figures/plots
+## commands: jpeg, png, win.metafile, pdf, postscript
+## Method 1
+jpeg("rplot.jpg")
+plot(x, y)
+dev.off()
+## Method 2
+dev.copy(png, "myplot.png")
+dev.off()
