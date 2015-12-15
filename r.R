@@ -34,3 +34,7 @@ dev.off()
 ## Method 2
 dev.copy(png, "myplot.png")
 dev.off()
+
+# remove incomplete cases
+dat <- data.frame(x1 = c(1,2,3, NA, 5), x2 = c(100, NA, 300, 400, 500))
+na.omit(dat)
