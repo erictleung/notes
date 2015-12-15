@@ -37,7 +37,8 @@ printf "txt\tfoo\nbaz\ttar\ntxt\tbar\n" `# create a two column list` | \
 time python -c "print 'hello, world!'"
 
 # secure copy files between local and host
-scp file1 user@host.com:~/Downloads/
+scp file1 user@host.com:~/Downloads/ # from local to host
+scp user@host.com:~/Downloads/file1 file1 # from host to local
 
 # special parameters in bash
 ## https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html
