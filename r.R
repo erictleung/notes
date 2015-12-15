@@ -38,3 +38,8 @@ dev.off()
 # remove incomplete cases
 dat <- data.frame(x1 = c(1,2,3, NA, 5), x2 = c(100, NA, 300, 400, 500))
 na.omit(dat)
+
+# test variances between two groups
+x <- rnorm(50, mean = 0, sd = 2)
+y <- rnorm(30, mean = 1, sd = 1)
+var.test(x, y)
