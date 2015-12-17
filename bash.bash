@@ -106,3 +106,6 @@ done
 
 # find the largest files in directory (doesn't work on Mac OS X 10.10.5)
 find . -printf '%s %p\n' | sort -nr | head
+
+# another command to find largest files and directories
+du -a . | sort -nr | head
