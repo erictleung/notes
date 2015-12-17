@@ -111,6 +111,7 @@ vi # text editor
 vim
 
 ## W
+w # show who is logged on and what they are doing
 wc
 whatis # searches for short description of command
 which # local program file in user's path
