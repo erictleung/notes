@@ -103,3 +103,6 @@ for f in *;
 do
     echo $f;
 done
+
+# find the largest files in directory (doesn't work on Mac OS X 10.10.5)
+find . -printf '%s %p\n' | sort -nr | head
