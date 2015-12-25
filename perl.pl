@@ -18,3 +18,9 @@ sub fun1 {
     print 1, "\n";
 }
 &fun1(); # invoke subroutine
+
+# sample array
+my @array1;
+$a[0] = 1;
+$a[1] = 2;
+$a[2] = 4;
