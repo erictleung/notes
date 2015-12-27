@@ -24,3 +24,8 @@ my @array1;
 $a[0] = 1;
 $a[1] = 2;
 $a[2] = 4;
+
+# conditional statement
+if ($a[2] == 0) {
+    print "Matched!\n";
+}
