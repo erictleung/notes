@@ -25,6 +25,13 @@ $a[0] = 1;
 $a[1] = 2;
 $a[2] = 4;
 
+# two-dimensional array
+my @two = (
+    ["a", "b", "c"],
+    ["d", "e", "f"],
+    ["g", "h", "i"]
+);
+
 # conditional statement
 if ($a[2] == 0) {
     print "Matched!\n";
