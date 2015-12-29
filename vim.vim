@@ -1,3 +1,6 @@
+" read Vim manual in Vim
+help
+
 " comments are made with double quotes
 " comment like this
 
