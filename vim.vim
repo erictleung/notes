@@ -1,6 +1,9 @@
 " read Vim manual in Vim
 help
 
+" read Vim manual on particular topic
+help wrap
+
 " comments are made with double quotes
 " comment like this
 
