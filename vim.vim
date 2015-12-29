@@ -20,3 +20,9 @@ set number! " toggle off/on
 
 " ask vim what option is currently set
 set number? " <name>?
+
+" set numeric options
+set numberwidth=10
+
+" set multiple options in one line
+set number numberwidth=10
