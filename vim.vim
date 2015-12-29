@@ -1,3 +1,6 @@
+" comments are made with double quotes
+" comment like this
+
 " echo back messages
 echo "Hello, world!"
 
