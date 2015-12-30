@@ -2,6 +2,7 @@
 
 ## `mongo` Shell Notes
 
+- `use <DB NAME>` - create new database, if it doesn't already exist
 - `db` - display current database name
 - `db.dropDatabase()` - drops current database
 - `db.<collections>.insert({<JSON OBJECT>})` - insert one JSON object to db
