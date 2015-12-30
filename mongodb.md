@@ -1,5 +1,33 @@
 # MongoDB Notes
 
+## Download and Installation
+
+Multiple ways to download and install MongoDB. Firstly, you can download MongoDB
+from their [website](https://www.mongodb.org/downloads). Otherwise, there are
+other package managers that'll help you. When in doubt, their
+[website](https://docs.mongodb.org/manual/installation/) has great instructions.
+
+*Homebrew*
+
+```
+> brew mongodb
+```
+
+*Macports*
+
+```
+> sudo port install mongodb
+```
+
+## Usage
+
+Default, data will be deposited in `/data/db` (on Linux/MacOS systems).
+Otherwise you can specify where the data will be deposited with:
+
+```
+> mongod --dbpath <path to data directory>
+```
+
 ## `mongo` Shell Notes
 
 - `use <DB NAME>` - create new database, if it doesn't already exist
