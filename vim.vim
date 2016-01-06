@@ -29,3 +29,12 @@ set numberwidth=10
 
 " set multiple options in one line
 set number numberwidth=10
+
+" remap one key (e.g. '-') to another key (e.g. 'x')
+map - x
+
+" spacial characters are in angle brackets
+"" when you press space, you'll visually select word
+map <space> viw
+"" when you press Ctrl-d, you'll delete the line
+map <c-d> dd
