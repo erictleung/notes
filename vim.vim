@@ -38,3 +38,11 @@ map - x
 map <space> viw
 "" when you press Ctrl-d, you'll delete the line
 map <c-d> dd
+
+" more mapping commands for working in specific modes
+"" nmap = normal mode
+nmap \ dd
+"" vmap = visual mode
+vmap \ U
+"" imap = insert mode
+imap <c-d> <esc>ddi
