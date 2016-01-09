@@ -46,3 +46,6 @@ nmap \ dd
 vmap \ U
 "" imap = insert mode
 imap <c-d> <esc>ddi
+
+" be careful for recursive mapping e.g.
+nmap dd O<esc>jddk
