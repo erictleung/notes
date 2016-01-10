@@ -51,6 +51,10 @@ git stash apply # un-stash commits and changes
 # squashing multiple commits into one
 git rebase -i HEAD~n # where n is the last n commits made
 
+# rebase local branch onto master
+git checkout -b local-branch
+git rebase master
+
 # syncing a fork
 git fetch upstream # given an upstream has been set up
 git checkout master
