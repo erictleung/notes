@@ -28,6 +28,7 @@ export
 
 ## F
 file # determine file type
+find
 
 ## G
 grep
@@ -39,13 +40,14 @@ history
 htop
 
 ## I
-
+if
+irb # Ruby interpreter
 
 ## J
 
 
 ## K
-
+kill
 
 ## L
 less
@@ -68,6 +70,7 @@ open
 
 ## P
 parallel
+passwd
 ping
 printf
 pwd
@@ -97,8 +100,8 @@ tail
 tar
 time
 tmux # terminal multiplexer
-touch
 top
+touch
 
 ## U
 unalias
@@ -113,16 +116,22 @@ vim
 ## W
 w # show who is logged on and what they are doing
 wc
+wget
 whatis # searches for short description of command
 which # local program file in user's path
 whoami
-wget
 
 ## X
-
+xz # general-purpose data compression tool
 
 ## Y
 yes
 
 ## Z
 zcat
+zdiff
+zgrep
+zip
+zless
+zmore
+zsh
