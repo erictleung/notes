@@ -1,7 +1,85 @@
-.class {
+/* CSS Notes */
 
+/* target a class */
+.class {
 }
 
+/* target elements with a particlar id */
 #id {
+}
 
+/* select all b elements that are descendants of any a */
+a b {
+}
+
+/* select className class of A elements */
+A.className {
+}
+
+/* combine multiple selectors together with commas (e.g. A, B, C) */
+A, B, C {
+}
+
+/* select everything */
+* {
+}
+
+/* select all B elements that immediately follow A elements */
+A + B {
+}
+
+/* select all B elements after A; close to A+B but gets all elements, not one */
+A ~ B {
+}
+
+/* select B children of A */
+A > B {
+}
+
+/* pseudo-selector to get first child p elements */
+p:first-child {
+}
+
+/* pseudo-selector to get single child p elements */
+p:only-child {
+}
+
+/* pseudo-selector to get last child p elements */
+p:last-child {
+}
+
+/* pseudo-selector to select nth child p elements e.g. 5th element p element */
+p:nth-child(5) {
+}
+
+/* pseudo-selector to select nth child going backwards */
+:nth-last-child(4) {
+}
+
+/* select first of a type e.g. select first span element */
+span:first-of-type {
+}
+
+/* close to nth-child(n) but by type e.g. get 2nd div element */
+div:nth-of-type(2) {
+}
+
+/* close to nth-of-type() but more specific e.g. get every 2nd p after 3rd p */
+p:nth-of-type(2n+3) {
+}
+
+/* select only type found e.g. select only p element found */
+p:only-of-type {
+}
+
+/* select last type found e.g. select last div in file */
+div:last-of-type {
+}
+
+/* select elements with nothing inside them */
+div:empty {
+}
+
+/* pseudoselector select those that do not match */
+p:not(.red) {
 }
