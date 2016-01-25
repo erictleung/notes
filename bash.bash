@@ -109,3 +109,6 @@ find . -printf '%s %p\n' | sort -nr | head
 
 # another command to find largest files and directories
 du -a . | sort -nr | head
+
+# convert a tab-delimited file to a comma-delimited file
+tr '\t' ',' < file.tsv > file.csv
