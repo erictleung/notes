@@ -62,3 +62,8 @@ git merge upstream/master
 
 # use git to help find trailing whitespace
 git diff --check
+
+# deal with configuration settings
+git config --list # look at your config
+git config --global user.name "Joe Bob" # change global username to 'Job Bob'
+git config --global user.email joe@email.com # change global email
