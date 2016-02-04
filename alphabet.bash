@@ -5,6 +5,7 @@ alias
 awk
 
 ## B
+bg # resume jobs in background
 bzip2
 
 ## C
@@ -27,6 +28,7 @@ emacs # text editor
 export
 
 ## F
+fg # moves background job to foreground
 file # determine file type
 find
 
@@ -44,7 +46,7 @@ if
 irb # Ruby interpreter
 
 ## J
-
+jobs # display status of jobs
 
 ## K
 kill
