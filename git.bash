@@ -67,3 +67,6 @@ git diff --check
 git config --list # look at your config
 git config --global user.name "Joe Bob" # change global username to 'Job Bob'
 git config --global user.email joe@email.com # change global email
+
+# check differences between staged changed and before you made changes
+git diff --cached
