@@ -49,3 +49,8 @@ imap <c-d> <esc>ddi
 
 " be careful for recursive mapping e.g.
 nmap dd O<esc>jddk
+
+" change file format of file
+set ff=unix
+set ff=mac
+set ff=dos
