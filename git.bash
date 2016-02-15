@@ -70,3 +70,6 @@ git config --global user.email joe@email.com # change global email
 
 # check differences between staged changed and before you made changes
 git diff --cached
+
+# look at changes you are about to make during a commit message
+git commit -v
