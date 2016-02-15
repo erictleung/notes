@@ -73,3 +73,6 @@ git diff --cached
 
 # look at changes you are about to make during a commit message
 git commit -v
+
+# show staged and unstanged changes (what would be committed with 'git commit')
+git diff HEAD
