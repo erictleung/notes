@@ -13,5 +13,5 @@ csc hello.scm ; chicken compiler
 ; set variable pi
 (define pi 3.14159)
 
-set compound procedure/function
+; set compound procedure/function
 (define (square x) (* x x))
