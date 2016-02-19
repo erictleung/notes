@@ -54,3 +54,6 @@ nmap dd O<esc>jddk
 set ff=unix
 set ff=mac
 set ff=dos
+
+" set a new leader key
+let mapleader = "-" " new leader is '-' key
