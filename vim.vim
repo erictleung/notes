@@ -57,3 +57,6 @@ set ff=dos
 
 " set a new leader key
 let mapleader = "-" " new leader is '-' key
+
+" define new command using leader key
+nnoremap <leader>d dd
