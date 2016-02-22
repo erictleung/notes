@@ -60,3 +60,6 @@ let mapleader = "-" " new leader is '-' key
 
 " define new command using leader key
 nnoremap <leader>d dd
+
+" add abbreviations
+iabbrev adn and " replace 'adn' with 'and' when typing
