@@ -1,6 +1,6 @@
 // Scala Notes
 
-val num1 = 10 // declaring value
+val num1 = 10 // declaring value i.e. does not change and immuntable
 var num2 = 20 // declaring variable
 
 1.to(10) // yields Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
@@ -44,3 +44,8 @@ for (i <- 1 to 3; j <- 1 to 3) print((10 * i + j) + " ")
 
 // `for` loop comprehension to return collection of values
 for (i <- 1 to 10) yield i % 3
+
+// write partial function for use later
+def adder(m: Int, n: Int) = m + n // add two numbers together
+val add2 = adder(2, _:Int) // add two to a number
+add2(5) // Int = 7
