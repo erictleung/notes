@@ -14,6 +14,10 @@ def max(x: Int, y: Int): Int = {
   else y
 }
 
+// anonymous functions
+val addOne = (x: Int) => x + 1
+addOne(1) // Int = 2
+
 // nested functions
 def time2(x: Int) = {
 
