@@ -49,3 +49,11 @@ for (i <- 1 to 10) yield i % 3
 def adder(m: Int, n: Int) = m + n // add two numbers together
 val add2 = adder(2, _:Int) // add two to a number
 add2(5) // Int = 7
+
+// curried functions to apply some functions now, and then rest later
+def multiply(m: Int)(n: Int): = m * n
+multiply(2)(3) // Int = 6
+val timesTwo = multiply(2) _ // value to multiply by two
+
+val curriedAdd = (adder _).curried // curry existing function w/ multiple params
+val addTwo = curriedAdd(2) // will add two to number
