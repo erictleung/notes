@@ -57,3 +57,12 @@ val timesTwo = multiply(2) _ // value to multiply by two
 
 val curriedAdd = (adder _).curried // curry existing function w/ multiple params
 val addTwo = curriedAdd(2) // will add two to number
+
+// allow use of variable arguments
+def capitalAll(args: String*) = {
+  args.map { arg =>
+    arg.capitalize
+  }
+}
+// or more succintly
+def anotherCapital(args: String*) = { args.map(_.capitalize }
