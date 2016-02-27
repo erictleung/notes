@@ -66,3 +66,12 @@ def capitalAll(args: String*) = {
 }
 // or more succintly
 def anotherCapital(args: String*) = { args.map(_.capitalize }
+
+// example class definition
+class Calculator {
+  val brand: String = "HP"
+  def add(m: Int, n: Int): Int = m + n
+}
+val calc = new Calculator // instantiate new object
+calc.add(1, 2) // use method from class
+calc.brand // String = "HP"
