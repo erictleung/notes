@@ -18,6 +18,7 @@
 \usepackage[hidelinks]{hyperref} % make nice URL links, remove decorations
 \usepackage{booktabs} % make nicer tables
 \usepackage[T1]{fontenc} % allow pipe character natively + maybe other perks
+\usepackage{listings} % add code blocks into text
 
 \pagenumbering{gobble} % suppress page numbering
 
@@ -45,6 +46,9 @@ Here is a pipe symbol without doing anything special: |.
     Armadillo & frozen      & 8.99       \\
   \bottomrule
 \end{tabular}
+
+% import script into LaTeX and specify language and other formatting
+\lstinputlisting[langauge=python, breaklines=true]{hello.py}
 
 % manual bibliography
 \begin{thebibliography}{9}
