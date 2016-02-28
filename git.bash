@@ -76,3 +76,9 @@ git commit -v
 
 # show staged and unstanged changes (what would be committed with 'git commit')
 git diff HEAD
+
+# change branch name
+git branch -m new_branch_name # given you're on the branch you want to rename
+git branch -m new_branch_name old_branch_name
+git push origin :old_branch_name # deletes old branch name from remote origin
+git push origin origin new_branch_name # pushes new branch name
