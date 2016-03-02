@@ -75,3 +75,17 @@ class Calculator {
 val calc = new Calculator // instantiate new object
 calc.add(1, 2) // use method from class
 calc.brand // String = "HP"
+
+// create constructors
+class Calculator(brand: String) {
+  val color: String = if (brand == "TI") {
+    "blue"
+  } else if (brand == "HP") {
+    "black"
+  } else {
+    "white"
+  }
+  def add(m: Int, n: Int): Int = m + n
+}
+val calc = new Calculator("TI")
+calc.color // String = blue
