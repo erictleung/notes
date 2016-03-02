@@ -63,3 +63,6 @@ nnoremap <leader>d dd
 
 " add abbreviations
 iabbrev adn and " replace 'adn' with 'and' when typing
+
+" apply mappings in buffer where defined with <buffer>
+nnoremap <buffer> <leader>x dd
