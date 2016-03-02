@@ -66,3 +66,6 @@ iabbrev adn and " replace 'adn' with 'and' when typing
 
 " apply mappings in buffer where defined with <buffer>
 nnoremap <buffer> <leader>x dd
+
+" autocommands to do things when certain events happen
+autocmd BufNewFile * :write " when opening any new file, write it first
