@@ -82,3 +82,6 @@ git branch -m new_branch_name # given you're on the branch you want to rename
 git branch -m new_branch_name old_branch_name
 git push origin :old_branch_name # deletes old branch name from remote origin
 git push origin origin new_branch_name # pushes new branch name
+
+# manage reference log information, being when tips of branches are updated
+git reflog
