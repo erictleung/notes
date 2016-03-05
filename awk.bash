@@ -17,6 +17,9 @@ BEGIN   { x=5 }         \
         { print x, $5 } \
 '
 
+# you can use awk as interpreter
+# $ awk -f filename
+
 # print entire file
 awk '{ print }' example.txt
 awk '{ print $0 }' example.txt
