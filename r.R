@@ -49,3 +49,7 @@ var.test(x, y)
 
 # count number of characters
 nchar("Hello, world!")
+
+# interact with loaded objects
+objects() # look at objects in the workspace
+rm() # remove objects from the workspace
