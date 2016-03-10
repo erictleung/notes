@@ -69,3 +69,13 @@ nnoremap <buffer> <leader>x dd
 
 " autocommands to do things when certain events happen
 autocmd BufNewFile * :write " when opening any new file, write it first
+
+" interacting with Vim dictionary
+zg " add word
+zG " add word to internal word list
+zw " like zg but marks word as wrong
+zW " like zw but to internal word list
+zuw " undo zw
+zug " undo zg
+zuW " undo zW
+zuG " undo zG
