@@ -53,3 +53,7 @@ nchar("Hello, world!")
 # interact with loaded objects
 objects() # look at objects in the workspace
 rm() # remove objects from the workspace
+
+# notes on various data files
+# .RData = saved data objects from an R session
+# .Rhistory = history of command lines used in session
