@@ -85,3 +85,7 @@ git push origin origin new_branch_name # pushes new branch name
 
 # manage reference log information, being when tips of branches are updated
 git reflog
+
+# recover deleted local branch that exists in Github
+git checkout origin/BranchName # recovers read only pointer
+git checkout -b BranchName # creates new branch from old
