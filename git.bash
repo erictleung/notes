@@ -89,3 +89,9 @@ git reflog
 # recover deleted local branch that exists in Github
 git checkout origin/BranchName # recovers read only pointer
 git checkout -b BranchName # creates new branch from old
+
+# rebase local branch to other things
+git checkout LocalBranch
+git fetch origin # grabs current remote
+git rebase origin/master # rebases local branch onto current remote
+git rebase master # rebase local branch onto local master
