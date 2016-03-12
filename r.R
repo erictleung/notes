@@ -61,3 +61,6 @@ rm() # remove objects from the workspace
 # differences between order and sort
 sort(c(1, 5, 2, 3)) # 1 2 3 5 - returns sorted vector
 order(c(1, 5, 2, 3)) # 1 3 4 2 - returns indices of a sorted vector
+
+# quick if-else statement
+ifelse(test = 1 == 2, yes = TRUE, no = FALSE)
