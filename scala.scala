@@ -89,3 +89,8 @@ class Calculator(brand: String) {
 }
 val calc = new Calculator("TI")
 calc.color // String = blue
+
+// extending a class with inheritance
+class ScientificCalculator(brand: String) extends Calculator(brand) {
+  def log(m: Double, base: Double) = math.log(m) / math.log(base)
+}
