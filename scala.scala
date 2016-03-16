@@ -94,3 +94,9 @@ calc.color // String = blue
 class ScientificCalculator(brand: String) extends Calculator(brand) {
   def log(m: Double, base: Double) = math.log(m) / math.log(base)
 }
+
+// overload methods, create multiple methods of same name in different
+// situations
+class EvenScientificCalculator(brand: String) extends ScientificCalculator(brand) {
+  def log(m: Double): Double = log(m, math.exp(1))
+}
