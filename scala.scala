@@ -65,7 +65,7 @@ def capitalAll(args: String*) = {
   }
 }
 // or more succintly
-def anotherCapital(args: String*) = { args.map(_.capitalize }
+def anotherCapital(args: String*) = { args.map(_.capitalize) }
 
 // example class definition
 class Calculator {
