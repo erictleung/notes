@@ -23,9 +23,7 @@ addOne(1) // Int = 2
 
 // nested functions
 def time2(x: Int) = {
-
   def times(a: Int, b: Int) = a * b
-
   times(2, x) // automatically returns result
 }
 
