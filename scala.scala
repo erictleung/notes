@@ -4,6 +4,9 @@ val num1 = 10 // declaring value i.e. does not change and immuntable
 var num2 = 20 // declaring variable
 
 1.to(10) // yields Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+1 to 10 // yields the same as above
+1 to 10 by 3 // Range(1, 4, 7, 10)
+1 until 10 // Range(1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 num2 += 5 // increment by 5
 num2 -= 5 // decrement by 5
