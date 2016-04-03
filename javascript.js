@@ -78,3 +78,8 @@ switch(value) {
     break;
 }
 console.log(answer); // "Is three"
+
+// ways to access elements in array
+var fullArr = [1, 2, 3];
+fullArr.splice(0, 1); // splice(start, deleteCount) - splice things out
+fullArr.slice(1); // slice(start, end) - take slices of array
