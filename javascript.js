@@ -15,6 +15,7 @@ var joinMe = ["Na ", "Na ", "Na ", "Na ", "Batman!"];
 joinMe.join(" "); // join together with spaces
 
 // numbers
+const TAX = 0.08; // set constants
 var number = 4; // set number
 var other = (4 * 2) + 4; // combining operations
 Math.random(); // creates floating point num 0 (incl) to 1 (excl)
@@ -83,3 +84,9 @@ console.log(answer); // "Is three"
 var fullArr = [1, 2, 3];
 fullArr.splice(0, 1); // splice(start, deleteCount) - splice things out
 fullArr.slice(1); // slice(start, end) - take slices of array
+
+// ask user for input
+var ans = prompt("What is your name?");
+
+// have popup to alert user
+alert("This is an alert!");
