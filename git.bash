@@ -95,3 +95,9 @@ git checkout LocalBranch
 git fetch origin # grabs current remote
 git rebase origin/master # rebases local branch onto current remote
 git rebase master # rebase local branch onto local master
+
+# move commits to new branch
+git checkout oldBranch
+git branch newBranch
+git reset --hard HEAD~n # go back n commits
+git checkout newBranch # your n commits will be on the new branch
