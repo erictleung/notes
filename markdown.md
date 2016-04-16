@@ -13,6 +13,16 @@ explain command line options.
 
 [pandoc]: http://pandoc.org/
 
+# Pandoc Usage
+
+```shell
+# General incantation
+pandoc -o output.html input.txt
+
+# Pandoc .md to .pdf using pdflatex
+pandoc test.txt -o test.pdf
+```
+
 # YAML Metadata Block
 
 ## LaTeX Settings
