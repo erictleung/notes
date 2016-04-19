@@ -44,4 +44,8 @@ pandoc test.txt -o test.pdf
 
   Options for the `geometry` package in LaTeX, to say set the margins
 
+* `papersize` (e.g. `papersize: letter`)
+
+  Options to change the paper size of your document
+
 [styleList]: https://www.zotero.org/styles
