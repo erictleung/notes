@@ -109,3 +109,7 @@ tr '\t' ',' < file.tsv > file.csv
 cd /path/you/want
 grep -r "word" .
 grep -ir "word" . # ignore case
+
+# create random number
+echo $RANDOM
+echo $[ RANDOM % 6 ] # random number modulo 6
