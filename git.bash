@@ -20,7 +20,8 @@ git commit --amend # keep previous commit message
 git reset --soft HEAD^
 
 # uncommit and unstage but keep all changes
-git reset HEAD^
+git reset HEAD^ # or...
+git reset HEAD~1
 
 # uncommit and throw away changes
 git reset --hard HEAD^
