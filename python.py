@@ -39,3 +39,8 @@ def fun(x):
 class TestAddingMethod(unittest.TestCase):
     def test_three(self):
         self.assertEqual(fun(3), 4)
+
+# regular expressions
+import re
+re.findall(r'\bf[a-z]*', 'which foot or hand fell fastest')
+# ['foot', 'fell', 'fastest']
