@@ -64,3 +64,16 @@ order(c(1, 5, 2, 3)) # 1 3 4 2 - returns indices of a sorted vector
 
 # quick if-else statement
 ifelse(test = 1 == 2, yes = TRUE, no = FALSE)
+
+# simple title case function
+# adapted from: http://stackoverflow.com/a/6364905
+simpleCap <- function(x) {
+    titleCase <- c()
+    for (i in 1:length(x)) {
+        s <- strsplit(x[i], " ")[[1]]
+        titleS <- paste(toupper(substring(s, 1,1)), substring(s, 2),
+                        sep="", collapse=" ")
+        titleCase <- c(titleCase, titleS)
+    }
+    titleCase
+}
