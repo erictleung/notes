@@ -77,3 +77,7 @@ simpleCap <- function(x) {
     }
     titleCase
 }
+
+# create formulas in R
+tempFormula <- as.formula(paste(c("Y", "~ ."), collapse = ""))
+lm(formula = tempFormula, data = data)
