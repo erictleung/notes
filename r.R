@@ -81,3 +81,8 @@ simpleCap <- function(x) {
 # create formulas in R
 tempFormula <- as.formula(paste(c("Y", "~ ."), collapse = ""))
 lm(formula = tempFormula, data = data)
+
+# use sweep function to operate on matrices to take "difference" in row/col
+M <- matrix( 1:12, ncol=3)
+dx <- colMeans(M)
+sweep(X = M, MARGIN = 2, STATS = dx, FUNS = "-")
