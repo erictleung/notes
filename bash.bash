@@ -75,9 +75,6 @@ echo a{p,c,d,b}e # ape ace ade abe
 echo {1..5} # 1 2 3 4 5
 echo {1..10..3} # 1 4 7 10
 
-# commands for imagemagick image manipulation command
-convert original.png -resize 64x64 resized.png # use aspect ratio but best fit
-
 # make directory and its intermediate directories along the way
 mkdir -p directories/in/between/will/be/made
 
