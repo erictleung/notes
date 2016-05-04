@@ -113,3 +113,7 @@ grep -ir "word" . # ignore case
 # create random number
 echo $RANDOM
 echo $[ RANDOM % 6 ] # random number modulo 6
+
+# view a .csv file in the command line
+# source: http://stackoverflow.com/a/3800791
+column -s, -t < someFile.csv | less -#2 -N -S
