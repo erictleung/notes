@@ -86,3 +86,6 @@ lm(formula = tempFormula, data = data)
 M <- matrix( 1:12, ncol=3)
 dx <- colMeans(M)
 sweep(X = M, MARGIN = 2, STATS = dx, FUNS = "-")
+
+# remove column from data frame by setting it to NULL
+iris$Species <- NULL
