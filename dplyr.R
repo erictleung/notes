@@ -21,3 +21,9 @@ multipetal <- function(df, n) {
     varval <- lazyeval::interp(~Petal.Width * n, n=n)
     mutate_(df, .dots= setNames(list(varval), varname))
 }
+
+# pass anonymous functions through pipes
+# source: http://stackoverflow.com/a/28075092
+foobar <- 1:3
+foobar %>% (function(x) x * 2)
+# [1] 2 4 6
