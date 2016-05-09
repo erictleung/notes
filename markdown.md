@@ -37,5 +37,9 @@ pandoc -o test.pdf test.txt
   in LaTeX, to say set the margins
 * `papersize` (e.g. `papersize: letter`) - Options to change the paper size of
   your document
+* `classoption` (e.g. `twocolumn`) - Options for document class
+    * `twoside`
+    * `oneside`
+    * `draft`
 
 [styleList]: https://www.zotero.org/styles
