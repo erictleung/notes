@@ -89,3 +89,6 @@ sweep(X = M, MARGIN = 2, STATS = dx, FUNS = "-")
 
 # remove column from data frame by setting it to NULL
 iris$Species <- NULL
+
+# matrix operations
+# source: http://statmethods.net/advstats/matrix.html
