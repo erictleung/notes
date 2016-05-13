@@ -27,3 +27,6 @@ multipetal <- function(df, n) {
 foobar <- 1:3
 foobar %>% (function(x) x * 2)
 # [1] 2 4 6
+
+# force show all rows
+iris %>% tbl_df %>% as.data.frame
