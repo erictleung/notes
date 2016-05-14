@@ -92,3 +92,9 @@ iris$Species <- NULL
 
 # matrix operations
 # source: http://statmethods.net/advstats/matrix.html
+
+# create your own operator
+# source: http://stackoverflow.com/a/36809188
+'%&%' <- function(x, y) paste0(x, y)
+"new" %&% "operator"
+# [1] "newoperator"
