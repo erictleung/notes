@@ -102,11 +102,6 @@ du -a . | sort -nr | head
 # convert a tab-delimited file to a comma-delimited file
 tr '\t' ',' < file.tsv > file.csv
 
-# recursively search all files for a string
-cd /path/you/want
-grep -r "word" .
-grep -ir "word" . # ignore case
-
 # create random number
 echo $RANDOM
 echo $[ RANDOM % 6 ] # random number modulo 6
