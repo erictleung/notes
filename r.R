@@ -51,16 +51,16 @@ var.test(x, y)
 nchar("Hello, world!")
 
 # interact with loaded objects
-objects() # look at objects in the workspace
-rm() # remove objects from the workspace
+objects()  # look at objects in the workspace
+rm()       # remove objects from the workspace
 
 # notes on various data files
 # .RData = saved data objects from an R session
 # .Rhistory = history of command lines used in session
 
 # differences between order and sort
-sort(c(1, 5, 2, 3)) # 1 2 3 5 - returns sorted vector
-order(c(1, 5, 2, 3)) # 1 3 4 2 - returns indices of a sorted vector
+sort(c(1, 5, 2, 3))   # 1 2 3 5 - returns sorted vector
+order(c(1, 5, 2, 3))  # 1 3 4 2 - returns indices of a sorted vector
 
 # quick if-else statement
 ifelse(test = 1 == 2, yes = TRUE, no = FALSE)
@@ -98,3 +98,7 @@ iris$Species <- NULL
 '%&%' <- function(x, y) paste0(x, y)
 "new" %&% "operator"
 # [1] "newoperator"
+
+# fix warning startup messages about LC_.*
+# source: http://stackoverflow.com/a/17510093
+locale  # view local settings
