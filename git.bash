@@ -102,3 +102,6 @@ git checkout oldBranch
 git branch newBranch
 git reset --hard HEAD~n # go back n commits
 git checkout newBranch # your n commits will be on the new branch
+
+# pull from origin branch
+git pull origin branch-name
