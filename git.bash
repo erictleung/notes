@@ -48,6 +48,8 @@ git clean -fx # want to remove both ignored and non-ignored files
 # easily "stash" away commits to use later
 git stash # stash away commits and changes
 git stash apply # un-stash commits and changes
+git stash save name-here # name stash to remember contents of stash
+git stash pop stash@{0} # apply particular stash where 0 is number
 
 # squashing multiple commits into one
 git rebase -i HEAD~n # where n is the last n commits made
