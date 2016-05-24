@@ -79,3 +79,10 @@ zuw " undo zw
 zug " undo zg
 zuW " undo zW
 zuG " undo zG
+
+" set different file formats
+set fileformat=unix
+set ff=unix
+set ff=dos
+set ff=mac
+set ffs=unix,dos
