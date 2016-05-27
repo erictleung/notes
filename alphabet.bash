@@ -89,6 +89,7 @@ run
 scp
 screen # terminal emulation
 sed
+seq
 shutdown
 sleep
 sort
