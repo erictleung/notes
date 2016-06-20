@@ -112,3 +112,6 @@ column -s, -t < someFile.csv | less -#2 -N -S
 
 # create sequence of numbers
 seq 10
+
+# check top 30 bash commands in your history
+cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30
