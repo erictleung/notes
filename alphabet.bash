@@ -109,6 +109,7 @@ touch
 ## U
 unalias
 uniq
+unzip
 uptime
 users # list current users
 
