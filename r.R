@@ -102,3 +102,11 @@ iris$Species <- NULL
 # fix warning startup messages about LC_.*
 # source: http://stackoverflow.com/a/17510093
 locale  # view local settings
+
+# calculate number of combinations
+choose(5, 0)
+# [1] 1
+choose(5, 1)
+# [1] 5
+choose(5, 2)
+# [1] 10
