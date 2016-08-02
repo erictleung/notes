@@ -107,3 +107,10 @@ git checkout newBranch # your n commits will be on the new branch
 
 # pull from origin branch
 git pull origin branch-name
+
+# uncommit a file
+# source: http://stackoverflow.com/a/15321456
+git reset --soft HEAD^ # or
+git reset --soft HEAD~1
+git reset HEAD path/to/unwanted_file
+git commit -c ORIG_HEAD # reuse original commit message
