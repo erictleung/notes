@@ -107,3 +107,6 @@ val left = 2
 val right = 1
 assert(left == 2) // no error
 assert(left == right) // assertion error
+
+// lazy values are evaluated when needed
+lazy val example = 2
