@@ -101,3 +101,9 @@ class ScientificCalculator(brand: String) extends Calculator(brand) {
 class EvenScientificCalculator(brand: String) extends ScientificCalculator(brand) {
   def log(m: Double): Double = log(m, math.exp(1))
 }
+
+// assert statements
+val left = 2
+val right = 1
+assert(left == 2) // no error
+assert(left == right) // assertion error
