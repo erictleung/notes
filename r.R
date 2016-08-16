@@ -110,3 +110,12 @@ choose(5, 1)
 # [1] 5
 choose(5, 2)
 # [1] 10
+
+# create empty data.frame
+# source: http://stackoverflow.com/a/10689206
+df <- data.frame(x1 = integer(), x2 = integer(), y = logical())
+df
+# 'data.frame':   0 obs. of  3 variables:
+#  $ x1: int
+#  $ x2: int
+#  $ y : logi
