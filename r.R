@@ -119,3 +119,8 @@ df
 #  $ x1: int
 #  $ x2: int
 #  $ y : logi
+
+# calculate cumulative sum
+a <- c(1, 2, 8, -3)
+cumsum(a)
+# [1]  1  3 11  8
