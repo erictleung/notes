@@ -44,6 +44,7 @@ htop
 ## I
 if
 irb # Ruby interpreter
+istats # iStats - sudo gem install iStats
 
 ## J
 jobs # display status of jobs
