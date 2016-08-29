@@ -56,6 +56,7 @@ kill
 less
 ln
 ls
+lsof # list open files
 
 ## M
 make
