@@ -19,6 +19,7 @@ column # columnate lists
 cp
 
 ## D
+date # display or set date and time
 df
 du
 
