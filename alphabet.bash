@@ -126,7 +126,8 @@ wc
 wget
 whatis # searches for short description of command
 which # local program file in user's path
-whoami
+who # show all users logged onto the system
+whoami # similar to `who -m`
 
 ## X
 xz # general-purpose data compression tool
