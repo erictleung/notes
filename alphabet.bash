@@ -35,6 +35,7 @@ find
 
 ## G
 grep
+groups # list current user and groups they belong to
 gzip
 
 ## H
