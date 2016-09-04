@@ -114,3 +114,6 @@ git reset --soft HEAD^ # or
 git reset --soft HEAD~1
 git reset HEAD path/to/unwanted_file
 git commit -c ORIG_HEAD # reuse original commit message
+
+# show changes made from commit
+git show <COMMIT> # where `<COMMIT>` is the commit ID
