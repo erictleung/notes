@@ -117,3 +117,6 @@ git commit -c ORIG_HEAD # reuse original commit message
 
 # show changes made from commit
 git show <COMMIT> # where `<COMMIT>` is the commit ID
+
+# follow git history of file
+git log --follow <FILENAME>
