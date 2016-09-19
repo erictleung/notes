@@ -44,3 +44,8 @@ class TestAddingMethod(unittest.TestCase):
 import re
 re.findall(r'\bf[a-z]*', 'which foot or hand fell fastest')
 # ['foot', 'fell', 'fastest']
+
+# find number of cores on computer
+# cli: python -c 'import multiprocessing as m; print m.cpu_count()'
+import multiprocessing as m
+print m.cpu_count()
