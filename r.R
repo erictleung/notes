@@ -124,3 +124,11 @@ df
 a <- c(1, 2, 8, -3)
 cumsum(a)
 # [1]  1  3 11  8
+
+# shortcut paste(..., sep = "") with paste0()
+paste(1:4, c("st", "nd", "rd", "th"))
+# [1] "1 st" "2 nd" "3 rd" "4 th"
+paste(1:4, c("st", "nd", "rd", "th"), sep = "")
+# [1] "1st" "2nd" "3rd" "4th"
+paste0(1:4, c("st", "nd", "rd", "th"))
+# [1] "1st" "2nd" "3rd" "4th"
