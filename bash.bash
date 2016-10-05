@@ -115,3 +115,6 @@ seq 10
 
 # check top 30 bash commands in your history
 cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30
+
+# display line numbers in cat
+cat -n myfile.md
