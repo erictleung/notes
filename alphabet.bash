@@ -114,6 +114,7 @@ touch
 unalias
 uniq
 unzip
+unset # remove existing variable
 uptime
 users # list current users
 
