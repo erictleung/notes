@@ -112,6 +112,7 @@ touch
 
 ## U
 unalias
+uname # print operating system name
 uniq
 unzip
 unset # remove existing variable
