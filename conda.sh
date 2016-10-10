@@ -12,3 +12,7 @@ source deactivate
 
 # remove environment
 conda remove -n yourenvname -all
+
+# list conda environments
+conda info --envs
+conda env list
