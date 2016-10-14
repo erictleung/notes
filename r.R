@@ -132,3 +132,7 @@ paste(1:4, c("st", "nd", "rd", "th"), sep = "")
 # [1] "1st" "2nd" "3rd" "4th"
 paste0(1:4, c("st", "nd", "rd", "th"))
 # [1] "1st" "2nd" "3rd" "4th"
+
+# edit data frames manually like a spreadsheet
+edit(data.frame()) # just to edit without saving
+newData <- edit(data.frame()) # editing with saving
