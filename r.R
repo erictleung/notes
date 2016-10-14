@@ -136,3 +136,6 @@ paste0(1:4, c("st", "nd", "rd", "th"))
 # edit data frames manually like a spreadsheet
 edit(data.frame()) # just to edit without saving
 newData <- edit(data.frame()) # editing with saving
+
+# save variable to global scope
+globalVar <<- 1
