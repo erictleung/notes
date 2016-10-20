@@ -44,6 +44,7 @@ history
 htop
 
 ## I
+id # print real and effective user and group IDs
 if
 ifconfig # configure network interface
 irb # Ruby interpreter
