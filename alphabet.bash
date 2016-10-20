@@ -45,6 +45,7 @@ htop
 
 ## I
 if
+ifconfig # configure network interface
 irb # Ruby interpreter
 istats # iStats - sudo gem install iStats
 
@@ -109,6 +110,7 @@ time
 tmux # terminal multiplexer
 top
 touch
+traceroute # trace route of network call
 
 ## U
 unalias
