@@ -16,6 +16,7 @@ v[order(nchar(v), v)]
 add2 <- function(n) {
     n + 2
 }
+add2 <- function(n) n + 2 # one line functions
 
 # find number of levels in a factor variable
 ex_factor <- factor(x = c(1, 2, 1, 1, 1, 2, 2, 1))
