@@ -98,6 +98,7 @@ scp
 screen # terminal emulation
 sed
 seq
+set # by itself will print all functions
 shutdown
 sleep
 sort
