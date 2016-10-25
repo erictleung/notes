@@ -121,3 +121,10 @@ cat -n myfile.md
 
 # run bash script for debugging with -x
 # bash -x script.sh
+
+# single vs double quotes
+date=20021224
+echo "$date"
+# 20021224
+echo '$date'
+# $date
