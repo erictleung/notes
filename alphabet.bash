@@ -26,6 +26,7 @@ du
 ## E
 echo
 emacs # text editor
+env # run program in environment or print env vars
 export
 
 ## F
