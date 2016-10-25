@@ -81,6 +81,7 @@ parallel
 passwd
 ping
 printf
+printenv # print all or part of environment
 pwd
 
 ## Q
