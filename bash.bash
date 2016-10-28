@@ -136,3 +136,7 @@ echo $FRANKY # returns nothing
 echo ${FRANKY:=Franky} # sets variable value if nonexistent
 FRANKY="James" # reassign variable
 echo ${FRANKY:="Back to Franky"} # fails to reassign
+
+# command substitution
+echo $(date)
+echo `date`
