@@ -128,3 +128,11 @@ echo "$date"
 # 20021224
 echo '$date'
 # $date
+
+# parameter expansion
+echo $SHELL # normal expansion
+echo ${!T*} # '!' allows for var expansion
+echo $FRANKY # returns nothing
+echo ${FRANKY:=Franky} # sets variable value if nonexistent
+FRANKY="James" # reassign variable
+echo ${FRANKY:="Back to Franky"} # fails to reassign
