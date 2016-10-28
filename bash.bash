@@ -55,6 +55,7 @@ num5=$(($num1 + $num2)); echo $num5
 (( num1 += 1 )); echo $num1 # returns 3
 ## expr command
 znum=`expr 4 + 2`; echo $znum
+echo $[365 * 24] # bracket notation for calculations
 
 # shift command - shifts parameter variables e.g. $1, $2 by given number
 ## e.g. shift 2 # shift parameter variables by 2
