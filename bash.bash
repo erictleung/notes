@@ -141,3 +141,8 @@ echo ${FRANKY:="Back to Franky"} # fails to reassign
 # command substitution
 echo $(date)
 echo `date`
+
+# display all shell options
+set -o
+set -o variableName # set shell option on
+set +o variableName # set shell option off
