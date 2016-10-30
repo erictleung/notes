@@ -49,3 +49,8 @@ re.findall(r'\bf[a-z]*', 'which foot or hand fell fastest')
 # cli: python -c 'import multiprocessing as m; print m.cpu_count()'
 import multiprocessing as m
 print m.cpu_count()
+
+# create function
+def functionName(params):
+    print("Hello, World!")
+functionName("input")
