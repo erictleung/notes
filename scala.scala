@@ -114,3 +114,7 @@ lazy val example = 2
 // options allow for potential values to be present or not
 val someValue: Option[String] = Some("I am wrapped in something")
 val emptyValue: Option[String] = None
+
+// string and character differences
+var charLit: Char = 'A' // single quotes
+var strLit: String = "A" // double quotes
