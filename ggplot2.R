@@ -15,3 +15,6 @@ p <- ggplot(df, aes(x=rating, fill=cond)) +
             xlab("NEW RATING TITLE") +
             ylab("NEW DENSITY TITLE")
 p <- p + guides(fill=guide_legend(title="New Legend Title"))
+
+# add annotation to side of plot
+# Source: http://stackoverflow.com/a/12417481/6873133
