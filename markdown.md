@@ -41,5 +41,6 @@ pandoc -o test.pdf test.txt
     * `twoside`
     * `oneside`
     * `draft`
+* `header-includes` (e.g. `\usepackage{graphicx}`) - Add LaTeX header commands
 
 [styleList]: https://www.zotero.org/styles
