@@ -146,3 +146,12 @@ echo `date`
 set -o
 set -o variableName # set shell option on
 set +o variableName # set shell option off
+
+# make arrays
+fruits[0]=Pineapple
+fruits[1]=Tomato
+fruits[2]=Banana
+echo ${fruits[0]} # Pineapple
+fruits=(Pineapple Tomato Banana) # another way to make arrays
+echo ${fruits[*]} # array expansion
+echo ${fruits[@]} # ...another way <- use this
