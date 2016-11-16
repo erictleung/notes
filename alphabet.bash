@@ -1,4 +1,5 @@
 # Alphabet of Bash Commands
+# Inspired by A-Z Index of Bash Command Line http://ss64.com/bash/
 
 ## A
 alias
