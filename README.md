@@ -7,10 +7,14 @@ Tips and notes I find useful for me
 - [The Linux Documentation Project][tldp]
 - [DevDocs][dd]
 - [The Grymoire][theg]
+- [Vim Documentation][vimdoc]
+- [LaTeX Wikibook][latex-wiki]
 
 [tldp]: http://tldp.org/
 [dd]: http://devdocs.io/
 [theg]: http://www.grymoire.com/
+[vimdoc]: http://vimdoc.sourceforge.net/htmldoc/usr_toc.html
+[latex-wiki]: https://en.wikibooks.org/wiki/LaTeX
 
 ## License
 
