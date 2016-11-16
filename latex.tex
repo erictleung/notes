@@ -31,6 +31,9 @@
 
 \maketitle
 
+% create table of contents
+\tableofcontents
+
 Here is a pipe symbol without doing anything special: |.
 
 % example booktabs table using midrules, toprules, and buttom rules
@@ -56,6 +59,10 @@ Here is a pipe symbol without doing anything special: |.
 %  \nocite{*} % used in body of document
 %  \bibliographystyle{annotate}
 %  \bibliography{\ref_file} % ref_file is .bib with Annotate fields per entry
+
+% add References section to table of contents because it doesn't automatically
+% show up
+\addcontentsline{toc}{section}{References}
 
 % manual bibliography
 \begin{thebibliography}{9}
