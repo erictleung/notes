@@ -1,0 +1,4 @@
+# Ignore LaTeX files
+*.aux
+*.pdf
+*.synctex.gz
