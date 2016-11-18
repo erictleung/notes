@@ -155,3 +155,7 @@ echo ${fruits[0]} # Pineapple
 fruits=(Pineapple Tomato Banana) # another way to make arrays
 echo ${fruits[*]} # array expansion
 echo ${fruits[@]} # ...another way <- use this
+
+# execute previous commands
+!500 # execute 500th entry in history
+!! # execute last command
