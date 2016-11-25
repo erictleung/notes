@@ -140,3 +140,7 @@ newData <- edit(data.frame()) # editing with saving
 
 # save variable to global scope
 globalVar <<- 1
+
+# find arguments of function
+args(plot.default)
+args(mean.default)
