@@ -16,3 +16,6 @@ conda remove -n yourenvname -all
 # list conda environments
 conda info --envs
 conda env list
+
+# create conda environments easier using environment.yml
+# source: http://stackoverflow.com/a/32799944/6873133
