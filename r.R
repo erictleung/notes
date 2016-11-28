@@ -144,3 +144,6 @@ globalVar <<- 1
 # find arguments of function
 args(plot.default)
 args(mean.default)
+
+# color schemes in R
+# source: http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
