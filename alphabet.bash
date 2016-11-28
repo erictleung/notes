@@ -67,6 +67,7 @@ lsof # list open files
 ## M
 make
 man
+md5 # get md5 checksum
 mkdir
 more
 mv
