@@ -159,3 +159,8 @@ echo ${fruits[@]} # ...another way <- use this
 # execute previous commands
 !500 # execute 500th entry in history
 !! # execute last command
+
+# CLI best practices
+# - http://eng.localytics.com/exploring-cli-best-practices/
+# - http://docopt.org/
+# - http://catb.org/esr/writings/taoup/html/ch11s06.html
