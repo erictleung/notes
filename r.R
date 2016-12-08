@@ -147,3 +147,7 @@ args(mean.default)
 
 # color schemes in R
 # source: http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+
+# read in printed out text into table
+readIn <- read.table(textConnection('Competition FreeLiquor RateofReturn Default
+1    Yes    Yes    High    No'))
