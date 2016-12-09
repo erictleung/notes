@@ -116,6 +116,7 @@ time
 tmux # terminal multiplexer
 top
 touch
+tr # translate characters with substitutions
 traceroute # trace route of network call
 
 ## U
