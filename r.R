@@ -151,3 +151,15 @@ args(mean.default)
 # read in printed out text into table
 readIn <- read.table(textConnection('Competition FreeLiquor RateofReturn Default
 1    Yes    Yes    High    No'))
+
+# boolean operations
+# source: http://stackoverflow.com/a/6559049/6873133
+# source: https://stat.ethz.ch/R-manual/R-devel/library/base/html/Logic.html
+x <- TRUE
+y <- FALSE
+!x          # negation
+x & y       # element-wise AND i.e. returns vector
+x && y      # logical AND of only one value
+x | y       # element-wise OR i.e. returns vector
+x || y      # logical OR of only one value
+xor(x, y)   # XOR == exclusive OR
