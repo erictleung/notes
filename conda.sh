@@ -22,3 +22,9 @@ conda env list
 
 # use Python 2.x and 3.x IPython notebooks with Conda
 # source: http://stackoverflow.com/a/30492913/6873133
+
+# create and load replicable Python dev environments
+source activate someEnv
+conda env export > environment.yml
+source deactivate
+conda env create -f environment.yml
