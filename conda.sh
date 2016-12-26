@@ -19,3 +19,6 @@ conda env list
 
 # create conda environments easier using environment.yml
 # source: http://stackoverflow.com/a/32799944/6873133
+
+# use Python 2.x and 3.x IPython notebooks with Conda
+# source: http://stackoverflow.com/a/30492913/6873133
