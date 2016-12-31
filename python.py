@@ -54,3 +54,6 @@ print m.cpu_count()
 def functionName(params):
     print("Hello, World!")
 functionName("input")
+
+# functional programming introduction (un-Pythonic patterns)
+# source: https://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming
