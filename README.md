@@ -10,6 +10,8 @@ Tips and notes I find useful for me
 - [Vim Documentation][vimdoc]
 - [LaTeX Wikibook][latex-wiki]
 - [The Hitchhiker's Guide to Python][pyhitch]
+- [Hyperpolyglot][poly]
+- [Learn X in Y Minutes][minutes]
 
 [tldp]: http://tldp.org/
 [dd]: http://devdocs.io/
@@ -17,6 +19,8 @@ Tips and notes I find useful for me
 [vimdoc]: http://vimdoc.sourceforge.net/htmldoc/usr_toc.html
 [latex-wiki]: https://en.wikibooks.org/wiki/LaTeX
 [pyhitch]: http://docs.python-guide.org/
+[poly]: http://hyperpolyglot.org/
+[minutes]: https://learnxinyminutes.com/
 
 ## License
 
