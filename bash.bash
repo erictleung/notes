@@ -164,3 +164,7 @@ echo ${fruits[@]} # ...another way <- use this
 # - http://eng.localytics.com/exploring-cli-best-practices/
 # - http://docopt.org/
 # - http://catb.org/esr/writings/taoup/html/ch11s06.html
+
+# add column of numbers using awk
+# source: http://stackoverflow.com/a/3098072/6873133
+awk '{ s += $1 } END { print s }' # where $1 is column one
