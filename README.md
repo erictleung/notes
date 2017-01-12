@@ -12,6 +12,7 @@ Tips and notes I find useful for me
 - [The Hitchhiker's Guide to Python][pyhitch]
 - [Hyperpolyglot][poly]
 - [Learn X in Y Minutes][minutes]
+- [texblog][texblog]
 
 [tldp]: http://tldp.org/
 [dd]: http://devdocs.io/
@@ -21,6 +22,7 @@ Tips and notes I find useful for me
 [pyhitch]: http://docs.python-guide.org/
 [poly]: http://hyperpolyglot.org/
 [minutes]: https://learnxinyminutes.com/
+[texblog]: http://texblog.org/
 
 ## License
 
