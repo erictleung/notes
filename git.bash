@@ -120,3 +120,8 @@ git show COMMIT # where `COMMIT` is the commit ID
 
 # follow git history of file
 git log --follow FILENAME
+
+# show last commit changes
+git show # verbose output
+git show --stat # show message and some stats
+git show --summary # get git commit message
