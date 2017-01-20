@@ -163,3 +163,7 @@ x && y      # logical AND of only one value
 x | y       # element-wise OR i.e. returns vector
 x || y      # logical OR of only one value
 xor(x, y)   # XOR == exclusive OR
+
+# shortcut booleans
+T == TRUE
+F == FALSE
