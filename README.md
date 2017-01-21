@@ -4,7 +4,7 @@ Tips and notes I find useful for me
 
 ## General Resources
 
-- [The Linux Documentation Project][tldp]
+- [The Linux Documentation Project][tldp] (LDP)
 - [DevDocs][dd]
 - [The Grymoire][theg]
 - [Vim Documentation][vimdoc]
