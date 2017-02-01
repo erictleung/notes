@@ -28,3 +28,10 @@ source activate someEnv
 conda env export > environment.yml
 source deactivate
 conda env create -f environment.yml
+
+# package management
+conda install packageName  # install packageName
+conda list  # list all package installed
+conda search anotherPkge  # search for package to install
+conda update oldPkge  # update old packages
+conda remove unusedPkge  # uninstall/remove unnecessary packages
