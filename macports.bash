@@ -17,3 +17,7 @@ port installed inactive
 
 # remove inactive ports
 sudo port uninstall inactive
+
+# search exact package name
+# source: http://johnlaudun.org/20140721-install-r-with-macports/
+port search --exact R
