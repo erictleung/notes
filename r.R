@@ -167,3 +167,9 @@ xor(x, y)   # XOR == exclusive OR
 # shortcut booleans
 T == TRUE
 F == FALSE
+
+# write to file with text
+# source: http://stackoverflow.com/a/2470277/6873133
+fileConn <- file("output.txt")
+writeLines(c("Hello", "World"), fileConn)
+close(fileConn)
