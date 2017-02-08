@@ -173,3 +173,12 @@ F == FALSE
 fileConn <- file("output.txt")
 writeLines(c("Hello", "World"), fileConn)
 close(fileConn)
+
+# repeat characters with replicate or rep
+# source: http://stackoverflow.com/a/22359177/6873133
+replicate(2, "doubleString")
+# [1] "doubleString" "doubleString"
+rep("doubleString", 2)
+# [1] "doubleString" "doubleString"
+paste(rep("doubleString", 2), collapse = "")
+# [1] "doubleStringdoubleString
