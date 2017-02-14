@@ -172,3 +172,8 @@ awk '{ s += $1 } END { print s }' # where $1 is column one
 # list only directories in current directory
 # source: http://stackoverflow.com/a/14352330/6873133
 ls -d */
+
+# download file with curL
+curl -o iris.csv \
+    http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+curl -O http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
