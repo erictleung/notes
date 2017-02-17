@@ -177,3 +177,6 @@ ls -d */
 curl -o iris.csv \
     http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 curl -O http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+
+# unzip file into directory
+unzip zipped-file.zip -d target-directory
