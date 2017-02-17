@@ -30,5 +30,49 @@ succ 9 + max 5 4 + 1 -- is the same as...
 min 1 2 -- prefix function
 1 `min` 2 -- make prefix function an infix function
 
--- define functions
+-- define functions/expressions
 doubleMe x = x + x
+
+-- save string characters with single quote
+conanO'Brien = "It's a-me, Conan O'Brien"
+
+-- ++ operator will concatenate strings/lists
+[1, 2, 3, 4] ++ [1, 2, 3, 4]
+"Hello" ++ " " ++ "World"
+
+-- string characters use double quotes
+'A' -- character type
+"CAT" -- list of characters
+
+-- index strings and lists using !!
+"James Gordon" !! 2 -- returns "m"
+[0, 1, 2, 3] !! 3 -- returns 3
+
+-- list operations
+let exList = [1,2,3,4]
+head exList -- 1
+tail exList -- [2,3,4]
+last exList -- 4
+init exList -- [1,2,3]
+length exList -- 4
+null exList -- False (checks if empty list)
+reverse exList -- [4,3,2,1]
+take 2 exList -- [1,2]
+drop 2 exList -- [3,4]
+
+-- list arithmetic
+maximum exList -- 4
+minimum exList -- 1
+sum exList -- 10
+product exList -- 24
+elem 4 exList -- True, check if element of list
+
+-- quicker expansion of elements
+[1..5] -- [1,2,3 4,5]
+['f'..'h'] -- "fgh"
+[2, 4..10] -- [2,4,6,8,10]
+
+-- repeating items
+take 8 (cycle [1,2,3]) -- [1,2, 3,1,2,3,1,2], cycle goes to infinity
+take 8 (repeat [1,2,3]) -- [[1,2,3],[1,2,3],[1,2,3]], repeat goes to infinity
+replicate 3 10 -- [10,10,10]
