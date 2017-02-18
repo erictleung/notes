@@ -11,7 +11,7 @@ source activate snowman
 source deactivate
 
 # remove environment
-conda remove -n yourenvname -all
+conda remove -n yourenvname --all
 
 # list conda environments
 conda info --envs
