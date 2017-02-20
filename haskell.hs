@@ -80,3 +80,8 @@ elem 4 exList -- True, check if element of list
 take 8 (cycle [1,2,3]) -- [1,2, 3,1,2,3,1,2], cycle goes to infinity
 take 8 (repeat [1,2,3]) -- [[1,2,3],[1,2,3],[1,2,3]], repeat goes to infinity
 replicate 3 10 -- [10,10,10]
+
+-- define functions with multiple arguments
+f :: Int -> Int -> Int -> Int -- function f with three arguments
+f x y z = x + y + z
+f 3 17 8
