@@ -13,9 +13,13 @@ True && False
 True || False
 not False
 
--- comaprisons
+-- comparisons
 5 == 5
 5 /= 4
+5 > 3
+5 < 4
+5 <= 20
+40 >= 2
 
 -- basic function use
 succ 5 -- returns successor i.e. 6
