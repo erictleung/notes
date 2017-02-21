@@ -85,3 +85,7 @@ replicate 3 10 -- [10,10,10]
 f :: Int -> Int -> Int -> Int -- function f with three arguments
 f x y z = x + y + z
 f 3 17 8
+
+-- cons operator to add to lists
+1 : [] -- [1]
+3 : (5 : []) -- [3,5]
