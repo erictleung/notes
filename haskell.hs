@@ -92,3 +92,12 @@ f 3 17 8
 
 -- lines splits on line boundaries
 lines "the quick brown\nfox\njumps" -- ["the quick brown","fox","jumps"]
+
+-- list comprehensions simliar to Python
+-- framework: [WHAT_TO_RETURN | CONDITIONS]
+[x*2 | x <- [1..10]] -- double all elements between 1 and 10
+[x*2 | x <- [1..10], x*2 => 12] -- keep elements greater than 12 when doubled
+
+-- first and second element of tuple
+fst (1,2) -- 1
+snd (1,2) -- 2
