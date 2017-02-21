@@ -89,3 +89,6 @@ f 3 17 8
 -- cons operator to add to lists
 1 : [] -- [1]
 3 : (5 : []) -- [3,5]
+
+-- lines splits on line boundaries
+lines "the quick brown\nfox\njumps" -- ["the quick brown","fox","jumps"]
