@@ -101,3 +101,11 @@ lines "the quick brown\nfox\njumps" -- ["the quick brown","fox","jumps"]
 -- first and second element of tuple
 fst (1,2) -- 1
 snd (1,2) -- 2
+
+-- different types
+a :: Int
+b :: Integer -- another way, but larger
+c :: Float -- single precision
+d :: Double -- double precision
+e :: Bool
+f :: Char
