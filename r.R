@@ -182,3 +182,10 @@ rep("doubleString", 2)
 # [1] "doubleString" "doubleString"
 paste(rep("doubleString", 2), collapse = "")
 # [1] "doubleStringdoubleString
+
+# install required packages if not already installed
+# source: http://stackoverflow.com/a/4090208/6873133
+list.of.packages <- c("ggplot2", "Rcpp")
+installedPkges <- installed.packages()[, "Package"]
+new.packages <- list.of.packages[!(list.of.packages %in% installedPkges)]
+if (length(new.packages)) install.packages(new.packages)
