@@ -125,3 +125,7 @@ git log --follow FILENAME
 git show # verbose output
 git show --stat # show message and some stats
 git show --summary # get git commit message
+
+# pull branch from remote
+# source: http://www.wetware.co.nz/2009/07/pull-a-git-branch-from-remote/
+git checkout -b new-branch origin/new-branch # sub origin for remote name
