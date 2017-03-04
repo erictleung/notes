@@ -189,3 +189,8 @@ list.of.packages <- c("ggplot2", "Rcpp")
 installedPkges <- installed.packages()[, "Package"]
 new.packages <- list.of.packages[!(list.of.packages %in% installedPkges)]
 if (length(new.packages)) install.packages(new.packages)
+
+# create paths easily
+file.path(getwd())                       # ~/
+file.path(getwd(), "Documents")          # ~/Documents
+file.path(getwd(), "Documents", "Safe")  # ~/Documents/Safe
