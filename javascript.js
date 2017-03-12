@@ -90,3 +90,7 @@ var ans = prompt("What is your name?");
 
 // have popup to alert user
 alert("This is an alert!");
+
+// retrieve timezone of user
+// source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat/resolvedOptions
+Intl.DateTimeFormat().resolvedOptions().timeZone
