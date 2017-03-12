@@ -1,6 +1,6 @@
 # Programming Notes
 
-Tips and notes I find useful for me
+Tips, notes, and TIL I find useful or interesting.
 
 ## General Resources
 
