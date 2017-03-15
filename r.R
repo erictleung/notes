@@ -194,3 +194,12 @@ if (length(new.packages)) install.packages(new.packages)
 file.path(getwd())                       # ~/
 file.path(getwd(), "Documents")          # ~/Documents
 file.path(getwd(), "Documents", "Safe")  # ~/Documents/Safe
+
+# find duplicate rows or elements
+repeatX <- c(1:5, 3:7)
+duplicated(repeatX)  # returns logical vector
+# [1] FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE
+anyDuplicated(repeatX)  # returns index of first duplicate
+# [1] 6
+duplicated(repeatX, fromLast = TRUE)  # starts from end
+# [1] FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
