@@ -5,3 +5,7 @@
 *.fls
 *.log
 *.fdb_latexmk
+*.nav
+*.out
+*.snm
+*.toc
