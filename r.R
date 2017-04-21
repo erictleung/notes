@@ -203,3 +203,7 @@ anyDuplicated(repeatX)  # returns index of first duplicate
 # [1] 6
 duplicated(repeatX, fromLast = TRUE)  # starts from end
 # [1] FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
+
+# drop factors from subset
+# source: http://stackoverflow.com/a/4284931/6873133
+factor(letters[1:5]) %>% .[1:3] %>% droplevels() %>% levels
