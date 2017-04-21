@@ -129,3 +129,7 @@ git show --summary # get git commit message
 # pull branch from remote
 # source: http://www.wetware.co.nz/2009/07/pull-a-git-branch-from-remote/
 git checkout -b new-branch origin/new-branch # sub origin for remote name
+
+# make existing branch track remote branch
+# source: http://stackoverflow.com/a/2286030/6873133
+git branch -u upstream/foo # where upstream is remote and foo is branch
