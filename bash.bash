@@ -174,8 +174,10 @@ awk '{ s += $1 } END { print s }' # where $1 is column one
 ls -d */
 
 # download file with curL
+# specify download file name
 curl -o iris.csv \
     http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+# write file with same name as linked address
 curl -O http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
 # unzip file into directory
