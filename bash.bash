@@ -182,3 +182,7 @@ curl -O http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
 # unzip file into directory
 unzip zipped-file.zip -d target-directory
+
+# specify where to output wget
+# source: http://stackoverflow.com/a/1078539/6873133
+# -P prefix
