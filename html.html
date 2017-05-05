@@ -19,5 +19,24 @@
 
   <!-- Here is an `img` element -->
   <img src="http://www.w3schools.com/images/lamp.gif" alt="Lamp" width="15" height="15">
+
+  <!-- Keyboard input elements -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd -->
+  <kbd>Ctrl + S</kbd>
+
+  <!-- Data-* attributes are custom data attribute that allow variables pieces of -->
+  <!-- information to be saved in an element -->
+  <img class="fruit orange" src="orange.png"
+    data-color="orange" data-shape="round" data-size="midsize">
+  </img>
+
+<script>
+  // Event listeners added to a target, in case 'window'
+  // source: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+  // other events: https://developer.mozilla.org/en-US/docs/Web/Events
+  window.addEventListener('keypress', functin(e) {
+    console.log(e);
+  });
+</script>
 </body>
 </html>
