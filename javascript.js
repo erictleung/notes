@@ -94,3 +94,15 @@ alert("This is an alert!");
 // retrieve timezone of user
 // source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat/resolvedOptions
 Intl.DateTimeFormat().resolvedOptions().timeZone
+
+// do..while vs while statement
+// condition tested before first iteration (while) vs after first iteration
+// (do..while)
+while (x > 0) {
+  console.log(x);
+  x -= 1
+}
+do {
+  console.log(x);
+  x -= 1
+} while (x > 0);
