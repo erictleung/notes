@@ -20,6 +20,7 @@
 \usepackage[T1]{fontenc} % allow pipe character natively + maybe other perks
 \usepackage{listings} % add code blocks into text
 \usepackage{setspace} % set spacing btwn lines e.g. \doublespace,\onehalfspace
+\usepackage{multicol} % make multiple columns within a set area
 
 \graphicspath{{images}} % add path so that you just have to reference img names
 
@@ -66,11 +67,13 @@ Here is a pipe symbol without doing anything special: |.
 % speed up compilation with indexing and draft mode
 % source: http://tex.stackexchange.com/a/8792
 
-% to create an annotated bibliography
-% source: http://tex.stackexchange.com/a/100596
-%  \nocite{*} % used in body of document
-%  \bibliographystyle{annotate}
-%  \bibliography{\ref_file} % ref_file is .bib with Annotate fields per entry
+% create multi-column section in page
+% source: http://stackoverflow.com/a/1491882/6873133
+\begin{multicols}{2}
+  Column 1 here
+  \columnbreak
+  Column 2 here
+\end{multicols}
 
 % add References section to table of contents because it doesn't automatically
 % show up
@@ -78,6 +81,11 @@ Here is a pipe symbol without doing anything special: |.
 
 % manual bibliography
 \begin{thebibliography}{9}
+% to create an annotated bibliography
+% source: http://tex.stackexchange.com/a/100596
+%  \nocite{*} % used in body of document
+%  \bibliographystyle{annotate}
+%  \bibliography{\ref_file} % ref_file is .bib with Annotate fields per entry
 
 \bibitem{lamport94} % citation key
     Leslie Lamport,
