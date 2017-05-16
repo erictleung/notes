@@ -210,3 +210,7 @@ factor(letters[1:5]) %>% .[1:3] %>% droplevels() %>% levels
 
 # possible origin of R code names
 # source: http://stackoverflow.com/a/13496840/6873133
+
+# get parent directory
+# source: http://stackoverflow.com/a/17317210/6873133
+dirname(getwd())
