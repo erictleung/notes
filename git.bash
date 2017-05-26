@@ -138,3 +138,8 @@ git branch -u upstream/foo # where upstream is remote and foo is branch
 #   -s : suppress committ description
 #   -n : sort output by number of commits
 git shortlog -sn
+
+# revert existing commits
+git revert HEAD         # revert previous commit
+git revert HEAD~3..HEAD # revert the last three commits
+git revert 0766c053     # revert specific commit
