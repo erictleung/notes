@@ -86,3 +86,7 @@ set ff=unix
 set ff=dos
 set ff=mac
 set ffs=unix,dos
+
+" repeat colon command
+" @: and repeat with @@
+" source: http://vim.wikia.com/wiki/Repeat_last_colon_command
