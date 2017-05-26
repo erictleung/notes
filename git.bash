@@ -133,3 +133,8 @@ git checkout -b new-branch origin/new-branch # sub origin for remote name
 # make existing branch track remote branch
 # source: http://stackoverflow.com/a/2286030/6873133
 git branch -u upstream/foo # where upstream is remote and foo is branch
+
+# look at leader board of contributors
+#   -s : suppress committ description
+#   -n : sort output by number of commits
+git shortlog -sn
