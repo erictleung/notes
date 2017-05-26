@@ -143,3 +143,6 @@ git shortlog -sn
 git revert HEAD         # revert previous commit
 git revert HEAD~3..HEAD # revert the last three commits
 git revert 0766c053     # revert specific commit
+
+# some cool tips on git
+# source: https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
