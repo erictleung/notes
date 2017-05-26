@@ -214,3 +214,6 @@ factor(letters[1:5]) %>% .[1:3] %>% droplevels() %>% levels
 # get parent directory
 # source: http://stackoverflow.com/a/17317210/6873133
 dirname(getwd())
+
+# write out Excel files, with specific sheets, openxlsx package
+# source: https://stackoverflow.com/a/43118134/6873133
