@@ -146,3 +146,7 @@ git revert 0766c053     # revert specific commit
 
 # some cool tips on git
 # source: https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
+
+# ignore file mode changes e.g. rw-r--r--
+# source: https://stackoverflow.com/a/1257613/6873133
+git config core.filemode false
