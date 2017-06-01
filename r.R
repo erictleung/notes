@@ -217,3 +217,8 @@ dirname(getwd())
 
 # write out Excel files, with specific sheets, openxlsx package
 # source: https://stackoverflow.com/a/43118134/6873133
+
+# count number of non-zero elements in each column
+# source: https://stackoverflow.com/a/22286988/6873133
+example <- matrix(sample(c(0,0,0,100),size=70,replace=T),ncol=7)
+colSums(exmple != 0)
