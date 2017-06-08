@@ -186,3 +186,8 @@ unzip zipped-file.zip -d target-directory
 # specify where to output wget
 # source: http://stackoverflow.com/a/1078539/6873133
 # -P prefix
+
+# difference between semicolon and double ampersand
+# source: https://unix.stackexchange.com/a/187148
+false ; echo "OK"   # prints "OK"
+false && echo "OK"  # prints nothing
