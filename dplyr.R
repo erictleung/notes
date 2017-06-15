@@ -30,3 +30,6 @@ foobar %>% (function(x) x * 2)
 
 # force show all rows
 iris %>% tbl_df %>% as.data.frame
+
+# apply grep search to rows
+df %>% filter(!grepl("\\d+", columnName)) # search for one or more numbers
