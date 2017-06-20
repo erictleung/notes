@@ -222,3 +222,9 @@ dirname(getwd())
 # source: https://stackoverflow.com/a/22286988/6873133
 example <- matrix(sample(c(0,0,0,100),size=70,replace=T),ncol=7)
 colSums(exmple != 0)
+
+# explanation of R objects
+#   - Rda - short for RData
+#   - RData - multiple data, use with save(), load(), attach(), etc
+#   - Rds - *single* R object
+# source: https://stackoverflow.com/a/21370351/6873133
