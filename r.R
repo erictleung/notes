@@ -235,3 +235,10 @@ file.path("path", "here")  # format path to "path/here" automatically
 dir.create("new-directory")  # create new directory
 dirname(".")  # gets parent directory
 basename("./base/")  # returns basename, which is "base"
+
+# check version of R
+R.Version()
+R.version
+R.version.string
+version
+compareVersion("1.1.0", "1.1.3")  # check versions of R
