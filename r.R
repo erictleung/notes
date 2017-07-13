@@ -228,3 +228,10 @@ colSums(exmple != 0)
 #   - RData - multiple data, use with save(), load(), attach(), etc
 #   - Rds - *single* R object
 # source: https://stackoverflow.com/a/21370351/6873133
+
+# directory related commands
+dir.exists("directory")  # check existing directory
+file.path("path", "here")  # format path to "path/here" automatically
+dir.create("new-directory")  # create new directory
+dirname(".")  # gets parent directory
+basename("./base/")  # returns basename, which is "base"
