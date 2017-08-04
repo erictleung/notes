@@ -191,3 +191,8 @@ unzip zipped-file.zip -d target-directory
 # source: https://unix.stackexchange.com/a/187148
 false ; echo "OK"   # prints "OK"
 false && echo "OK"  # prints nothing
+
+# calculate size of directory and contents
+# source: https://unix.stackexchange.com/a/3021
+du -s directory_name
+du -hs directory_name # human-readable size
