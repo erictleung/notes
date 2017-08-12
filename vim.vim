@@ -90,3 +90,6 @@ set ffs=unix,dos
 " repeat colon command
 " @: and repeat with @@
 " source: http://vim.wikia.com/wiki/Repeat_last_colon_command
+
+" paste text temporarily from clipboard
+set paste
