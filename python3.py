@@ -26,3 +26,6 @@ list(range(5))  # get contents out
 # function definition
 def add_two(a, b):
     return(a + b)
+
+# run quick script from CLI
+# python -c "print('Hello, World!')"
