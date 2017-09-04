@@ -150,3 +150,7 @@ git revert 0766c053     # revert specific commit
 # ignore file mode changes e.g. rw-r--r--
 # source: https://stackoverflow.com/a/1257613/6873133
 git config core.filemode false
+
+# look at changes from last commit
+git log -p -1
+git log -p -1 interesting.md # see commit for particular file
