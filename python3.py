@@ -29,3 +29,7 @@ def add_two(a, b):
 
 # run quick script from CLI
 # python -c "print('Hello, World!')"
+
+# create for loop
+for i in range(5):
+    print(i)
