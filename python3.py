@@ -33,3 +33,20 @@ def add_two(a, b):
 # create for loop
 for i in range(5):
     print(i)
+
+# playing with time
+import time
+time.time() # seconds since Unix Epoch i.e. 1200 Jan 1 1970
+time.localtime(time.time()) # parsed time with structure
+time.asctime(time.localtime(time.time())) # more readble time
+time.sleep(5) # pause for 5 seconds
+
+# datetime module
+import datetime
+datetime.datetime.today()
+d = datetime.date(1993, 12, 1) # Yr 1993, Mn 12, Dy 1
+t = datetime.time(hour = 12) # 12:00
+datetime.datetime.combine(d, t)
+datetime.time(12) < datetime.time(13) # compare times
+datetime.datetime(1993, 12, 1) < datetime.datetime(1993, 11, 3) # compare dates
+datetime.datetime.today().strftime('%d %a %b %Y %H:%M:%S') # formatted date
