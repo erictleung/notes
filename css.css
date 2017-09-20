@@ -1,5 +1,7 @@
 /* CSS Notes */
 
+/*** Tag Selectors ***/
+
 /* target a class */
 .class {
 }
@@ -82,4 +84,25 @@ div:empty {
 
 /* pseudoselector select those that do not match */
 p:not(.red) {
+}
+
+
+/*** Property Changes ***/
+
+/* animation */
+* {
+  /* animal stop for debugging */
+  animation-play-state: paused;
+}
+
+/* @keyframes control steps in CSS animations */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 30%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
