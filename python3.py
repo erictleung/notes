@@ -50,3 +50,25 @@ datetime.datetime.combine(d, t)
 datetime.time(12) < datetime.time(13) # compare times
 datetime.datetime(1993, 12, 1) < datetime.datetime(1993, 11, 3) # compare dates
 datetime.datetime.today().strftime('%d %a %b %Y %H:%M:%S') # formatted date
+
+# function programming with functools
+import functools
+def plus(a, b):
+    return(a + b)
+plus5 = functools.partial(b = 5)
+plus5(1) # returns 6
+
+# in general, collection of objects mutable, scalar immuntable
+# exceptions, tuple, frozenset, and bytearray
+
+# iterators always classes, uses next() and StopIteration exception
+# see: https://docs.python.org/3/glossary.html#term-iterator
+
+# zip creates tuples from multiple iterable collections
+# see: https://docs.python.org/3/library/functions.html#zip
+a1 = [1, 2, 3]
+b2 = [4, 5, 6]
+ab = list(zip(a, b)) # [(1, 4), (2, 5), (3, 6)]
+a2, b2 = zip(*ab) # unzip and put into tuples
+print(a2) # (1, 2, 3)
+print(b2) # (4, 5, 6)
