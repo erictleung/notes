@@ -100,6 +100,11 @@ find . -printf '%s %p\n' | sort -nr | head
 # another command to find largest files and directories
 du -a . | sort -nr | head
 
+# ... find and sort directories by KB units greater than 500 MB
+# -k = chunk into 1024-byte (1 KB) blocks
+# see https://www.moncefbelyamani.com/find-the-largest-folders-on-your-mac-in-one-keystroke-with-keyboard-maestro-or-quicksilver/
+du -k . | awk '$1 > 500000' | sed -e 's_^\([09-]*\)_\1 KB_' | sort -nr
+
 # convert a tab-delimited file to a comma-delimited file
 tr '\t' ',' < file.tsv > file.csv
 
