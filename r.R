@@ -243,3 +243,10 @@ R.version
 R.version.string
 version
 compareVersion("1.1.0", "1.1.3")  # check versions of R
+
+# extract substring easily with stringr
+library(stringr)
+str_extract("I want the word James", regex("James"))
+# [1] "James"
+str_extract("2017-09-22_file-1_work-stuff", regex("file-[0-9]{1,3}"))
+# [1] "file-1"
