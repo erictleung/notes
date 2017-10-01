@@ -53,6 +53,7 @@ nchar("Hello, world!")
 
 # interact with loaded objects
 objects()  # look at objects in the workspace
+ls()       # another way to look at objects too
 rm()       # remove objects from the workspace
 
 # notes on various data files
