@@ -1,0 +1,13 @@
+// Dot Language Notes
+// http://graphviz.org/
+
+// Getting started
+// https://www.worthe-it.co.za/programming/2017/09/19/quick-introduction-to-graphviz.html
+
+// Command line creating .png file
+// $ dot -T png -o hello.png hello.dot
+
+// Simple graph from A to B
+graph {
+  A -- B
+}
