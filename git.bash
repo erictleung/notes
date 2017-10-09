@@ -73,11 +73,12 @@ git config --global user.email joe@email.com # change global email
 
 # check differences between staged changed and before you made changes
 git diff --cached
+git diff --staged
 
 # look at changes you are about to make during a commit message
 git commit -v
 
-# show staged and unstanged changes (what would be committed with 'git commit')
+# show staged and unstaged changes (what would be committed with 'git commit -a')
 git diff HEAD
 
 # change branch name
