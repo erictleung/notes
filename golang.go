@@ -1,5 +1,10 @@
 // Go Programming Notes
 
+// Resources
+// - By by Example https://gobyexample.com/
+// - An Introduction to Programming in Go http://www.golang-book.com/books/intro
+// - Effective Go https://golang.org/doc/effective_go.html
+
 // To run Go program
 // $ mkdir pkgname
 // $ cd pkgname
