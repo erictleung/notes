@@ -31,6 +31,7 @@ env # run program in environment or print env vars
 export
 
 ## F
+fdisk # help partition hard drive
 fg # moves background job to foreground
 file # determine file type
 find
