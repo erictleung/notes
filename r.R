@@ -250,3 +250,10 @@ str_extract("I want the word James", regex("James"))
 # [1] "James"
 str_extract("2017-09-22_file-1_work-stuff", regex("file-[0-9]{1,3}"))
 # [1] "file-1"
+
+# reorder factor levels
+# source: https://www.r-bloggers.com/reorder-factor-levels/
+x <- factor(sample(letters[1:5], 100, replace = TRUE))
+print(levels(x)) # Levels: a b c d e
+x <- factor(x, levels(x)[c(4, 5, 1:3)])
+print(levels(x)) # Levels: d e a b c
