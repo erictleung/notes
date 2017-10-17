@@ -257,3 +257,12 @@ x <- factor(sample(letters[1:5], 100, replace = TRUE))
 print(levels(x)) # Levels: a b c d e
 x <- factor(x, levels(x)[c(4, 5, 1:3)])
 print(levels(x)) # Levels: d e a b c
+
+# cut vector into defined intervals
+# source: https://stackoverflow.com/a/5746634/6873133
+x <- sample(0:20, 100, replace = TRUE)
+cut(x, breaks = c(0, 10, 20), include.lowest = TRUE)
+# [1] (10,20] [0,10]  [0,10]  (10,20] (10,20] (10,20] [0,10]  (10,20] (10,20]
+# ...
+# [100] (10,20]
+# Levels: [0,10] (10,20]
