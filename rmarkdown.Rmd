@@ -12,7 +12,9 @@ tables: true
 ---
 ```
 
-## Multiple Columns
+## Presentations
+
+### Multiple Columns
 
 For add multiple columns
 
@@ -38,3 +40,29 @@ Column 2 Content
 </div>
 
 Source: https://stackoverflow.com/a/44392145/6873133
+
+### Left Justify Presentation
+
+<style type="text/css">
+  .reveal p {
+    text-align: left;
+  }
+  .reveal ul {
+    display: block;
+  }
+  .reveal ol {
+    display: block;
+  }
+</style>
+
+* a
+* picture
+* says more
+* than a thousand words
+
+or
+
+1. item 1
+1. item 2
+
+Source: https://stackoverflow.com/a/41047550/6873133
