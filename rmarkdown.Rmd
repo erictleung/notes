@@ -1,0 +1,40 @@
+---
+title: RMarkdown Notes
+---
+
+Add tables to RMarkdown with `tables: true` in header (source:
+http://stackoverflow.com/a/30781675/6873133).
+
+```
+---
+title: Example
+tables: true
+---
+```
+
+## Multiple Columns
+
+For add multiple columns
+
+<style>
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+</style>
+
+<div class="container">
+
+<div class="col">
+Column 1 Content
+</div>
+
+<div class="col">
+Column 2 Content
+</div>
+
+</div>
+
+Source: https://stackoverflow.com/a/44392145/6873133
