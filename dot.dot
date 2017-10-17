@@ -3,6 +3,8 @@
 
 // Getting started
 // https://www.worthe-it.co.za/programming/2017/09/19/quick-introduction-to-graphviz.html
+// https://stamm-wilbrandt.de/GraphvizFiddle/
+// http://graphs.grevian.org/example
 
 // Command line creating .png file
 // $ dot -T png -o hello.png hello.dot
