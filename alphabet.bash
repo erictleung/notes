@@ -106,6 +106,7 @@ shutdown
 sleep
 sort
 source
+split # split file smaller by line count
 ssh
 su
 sudo
