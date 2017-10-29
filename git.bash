@@ -167,3 +167,6 @@ git bundle create commits.bundle master ^9a466c5 # create new bundle
 # ... move commits.bundle to original computer
 git bundle verify ../commits.bundle # verify commits in case missing
 git fetch ../commits.bundle master:other-master # move commits to branch
+
+# nice quick overview of logs
+git log --oneline --decorate --graph --all
