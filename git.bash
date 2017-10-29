@@ -174,3 +174,6 @@ git log --oneline --decorate --graph --all
 # list tags made alphabetically
 git tag
 git tag -l "v1.0*" # specific tags
+
+# git commit templates
+git config --global commit.template ~/.gittemplate
