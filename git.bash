@@ -170,3 +170,7 @@ git fetch ../commits.bundle master:other-master # move commits to branch
 
 # nice quick overview of logs
 git log --oneline --decorate --graph --all
+
+# list tags made alphabetically
+git tag
+git tag -l "v1.0*" # specific tags
