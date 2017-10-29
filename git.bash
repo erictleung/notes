@@ -155,3 +155,15 @@ git config core.filemode false
 # look at changes from last commit
 git log -p -1
 git log -p -1 interesting.md # see commit for particular file
+
+# bundle commits in dire circumstances
+# source: https://git-scm.com/blog/2010/03/10/bundles.html
+git bundle create repo.bundle master # create bundle on master branch
+# ... move repo.bundle file to other computer
+git clone repo.bundle -b master repo # creates new repo
+# ... make changes
+git log --oneline master ^9a466c5 # look at commits you've changed
+git bundle create commits.bundle master ^9a466c5 # create new bundle
+# ... move commits.bundle to original computer
+git bundle verify ../commits.bundle # verify commits in case missing
+git fetch ../commits.bundle master:other-master # move commits to branch
