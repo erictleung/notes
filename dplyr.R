@@ -33,3 +33,9 @@ iris %>% tbl_df %>% as.data.frame
 
 # apply grep search to rows
 df %>% filter(!grepl("\\d+", columnName)) # search for one or more numbers
+
+# find duplicate rows or values in columns
+# source: https://stackoverflow.com/a/28244567/6873133
+mtcars %>%
+   group_by(carb) %>%
+   filter(n() > 1)
