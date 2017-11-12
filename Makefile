@@ -5,3 +5,6 @@
 # Resources
 #   - http://swcarpentry.github.io/make-novice/
 #   - https://www.gnu.org/software/make/manual/make.html
+# Cheatsheets
+#   - http://wiki.wlug.org.nz/MakefileHowto
+#   - http://martinvseticka.eu/temp/make/normal.html
