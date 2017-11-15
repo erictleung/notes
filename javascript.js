@@ -106,3 +106,8 @@ do {
   console.log(x);
   x -= 1
 } while (x > 0);
+
+// filter array based on boolean values
+var ages = [32, 33, 16, 40];
+var tf = ages.map((x) => x > 32); // create arbitrary boolean array
+ages.filter((ele, idx) => tf[idx] ? ele : null); // [33, 40]
