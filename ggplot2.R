@@ -24,3 +24,11 @@ p <- p + guides(fill=guide_legend(title="New Legend Title"))
 dt <- data.frame(country = letters[1:20], val = rnorm(20), siz = rnorm(20))
 qplot(x = country, y = val, data = dt, geom = "point", size = siz) +
     scale_size(range = c(2, 10))
+
+# remove all of (x) axis labels
+# remove everything, but can pick and choose which ones to keep
+# source: https://stackoverflow.com/a/35090981/6873133
+ggplot(data = diamonds, mapping = aes(x = clarity)) + geom_bar(aes(fill = cut))+
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank())
