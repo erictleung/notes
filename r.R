@@ -269,3 +269,8 @@ cut(x, breaks = c(0, 10, 20), include.lowest = TRUE)
 
 # remove space for title using base R
 par(mar = c(5, 5, 2, 2) + 0.1)
+
+# create matrix where rows sum to 1
+n <- 10
+mat <- matrix(runif(n^2), ncol = n)
+mat <- mat / rowSums(mat)
