@@ -93,3 +93,9 @@ set ffs=unix,dos
 
 " paste text temporarily from clipboard
 set paste
+
+" forces Vim to source .vimrc in working directory
+set exrc
+
+" restrict usage of commands to non-default .vimrc files
+set secure
