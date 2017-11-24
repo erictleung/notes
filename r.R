@@ -1,5 +1,10 @@
 # R Notes
 
+# useful packages
+library(tidyverse)  # packages to help create tidy data
+library(pwr)        # functions to help calculate power and sample size
+library(devtools)   # help create R packages
+
 # require packages
 require(survival)
 
