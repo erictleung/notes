@@ -32,3 +32,11 @@ ggplot(data = diamonds, mapping = aes(x = clarity)) + geom_bar(aes(fill = cut))+
   theme(axis.title.x = element_blank(),
         axis.text.x = element_blank(),
         axis.ticks.x = element_blank())
+
+# draw ellipses around scatterplot clusters
+# default, 95% of data drawn around
+# source: http://ggplot2.tidyverse.org/reference/stat_ellipse.html
+faithpoint <- ggplot(faithful, aes(waiting, eruptions, color = eruptions > 3)) +
+    geom_point() +
+faithpoint + stat_ellipse()
+faithpoint + stat_ellipse(level = 0.99)
