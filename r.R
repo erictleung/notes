@@ -279,3 +279,7 @@ par(mar = c(5, 5, 2, 2) + 0.1)
 n <- 10
 mat <- matrix(runif(n^2), ncol = n)
 mat <- mat / rowSums(mat)
+
+# check if all values equal/identical
+identical(1, 2, 3)  # FALSE
+identical(3, 3, 3)  # TRUE
