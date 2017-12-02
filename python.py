@@ -1,6 +1,9 @@
 # Python Notes
 # Version 2.7
 
+# How To Package Your Python Code
+# http://python-packaging.readthedocs.io
+
 # for loop
 for i in range(10):
     print i
