@@ -77,3 +77,9 @@ print(b2) # (4, 5, 6)
 # source: https://stackoverflow.com/a/522578/6873133
 for idx, val in enumerate(range(10)):
     print(idx, val)
+
+# select list elements by index
+# source: https://stackoverflow.com/q/18272160/6873133
+a = [1, 2, 5, 2, 3]
+b = [1, 2, 4]
+print([a[i] for i in b])
