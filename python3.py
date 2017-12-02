@@ -72,3 +72,8 @@ ab = list(zip(a, b)) # [(1, 4), (2, 5), (3, 6)]
 a2, b2 = zip(*ab) # unzip and put into tuples
 print(a2) # (1, 2, 3)
 print(b2) # (4, 5, 6)
+
+# get index of for loop
+# source: https://stackoverflow.com/a/522578/6873133
+for idx, val in enumerate(range(10)):
+    print(idx, val)
