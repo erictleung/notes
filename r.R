@@ -283,3 +283,6 @@ mat <- mat / rowSums(mat)
 # check if all values equal/identical
 identical(1, 2, 3)  # FALSE
 identical(3, 3, 3)  # TRUE
+
+# S3-S4-R5 dictionary
+# source: https://stevencarlislewalker.wordpress.com/s3-s4-dictionary/
