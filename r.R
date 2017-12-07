@@ -286,3 +286,8 @@ identical(3, 3, 3)  # TRUE
 
 # S3-S4-R5 dictionary
 # source: https://stevencarlislewalker.wordpress.com/s3-s4-dictionary/
+
+# install packages referenced in project
+# source: https://twitter.com/frod_san/status/938828858970828801
+pkgs <- checkpoint::scanForPackages()
+pacman::p_load(char = pkgs$pkgs)
