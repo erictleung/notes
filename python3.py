@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# resources:
+# - Python Packaging User Guide https://packaging.python.org/
+# - The Hitchhiker's Guide to Python http://docs.python-guide.org
+
 # data types in Python3
 2       # integers and numbers
 "eggs"  # strings
