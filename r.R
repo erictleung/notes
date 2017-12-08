@@ -85,7 +85,7 @@ simpleCap <- function(x) {
     titleCase
 }
 
-# create formulas in R
+# create s in R
 tempFormula <- as.formula(paste(c("Y", "~ ."), collapse = ""))
 lm(formula = tempFormula, data = data)
 
@@ -291,3 +291,10 @@ identical(3, 3, 3)  # TRUE
 # source: https://twitter.com/frod_san/status/938828858970828801
 pkgs <- checkpoint::scanForPackages()
 pacman::p_load(char = pkgs$pkgs)
+
+# notes on formula notation
+# source: http://faculty.chicagobooth.edu/richard.hahn/teaching/FormulaNotation.pdf
+lm(mpg ~ hp + cyl, data = mtcars) # mpg = b_0 + b_1*hp + h_2*cyl
+lm(mpg ~ hp:cyl, data = mtcars)   # mpg = b_0 + b_1*hp*cyl
+lm(mpg ~ hp*cyl, data = mtcars)   # mpg = b_0 + b_1*hp + h_2*cyl + h_3*hp*cyl
+lm(mpg ~ hp + cyl + hp:cyl, data = mtcars) # same as above
