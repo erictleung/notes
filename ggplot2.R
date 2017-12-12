@@ -40,3 +40,14 @@ faithpoint <- ggplot(faithful, aes(waiting, eruptions, color = eruptions > 3)) +
     geom_point() +
 faithpoint + stat_ellipse()
 faithpoint + stat_ellipse(level = 0.99)
+
+# add table into plot with tableGrob
+# source: https://stackoverflow.com/a/44121513/6873133
+library(gridExtra)
+mydata <- data.frame(a=1:50, b=rnorm(50))
+mytable <- cbind(sites=c("site 1","site 2","site 3","site 4"), mydata[10:13,])
+k <- ggplot(mydata,aes(x=a,y=b)) + 
+  geom_point(colour="blue") + 
+  geom_point(data=mydata[10:13, ], aes(x=a, y=b), colour="red", size=5) + 
+  annotation_custom(tableGrob(mytable, rows=NULL), 
+                    xmin=35, xmax=50, ymin=-2.5, ymax=-1)
