@@ -1,6 +1,7 @@
 # R Notes
 
 # useful packages
+# more: https://www.crantastic.org/
 library(tidyverse)  # packages to help create tidy data
 library(pwr)        # functions to help calculate power and sample size
 library(devtools)   # help create R packages
