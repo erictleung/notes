@@ -1,5 +1,10 @@
 # R Notes
 
+# package development
+# - http://www.masalmon.eu/2017/12/11/goodrpackages/
+# - http://r-pkgs.had.co.nz/
+# - https://cran.r-project.org/doc/manuals/r-release/R-exts.html
+
 # useful packages
 # more: https://www.crantastic.org/
 library(tidyverse)  # packages to help create tidy data
