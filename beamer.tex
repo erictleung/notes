@@ -55,4 +55,14 @@
     Contents of the second slide
 \end{frame}
 
+% ability to reference titles in slide
+% source: https://tex.stackexchange.com/questions/145004
+\begin{frame}
+    \frametitle[Short title]{Here is a longtitle}
+    
+    Long title: \insertsection
+    
+    Short title: \insertsectionhead
+\end{frame}
+
 \end{document}
