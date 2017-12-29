@@ -21,6 +21,7 @@
 \usepackage{listings} % add code blocks into text
 \usepackage{setspace} % set spacing btwn lines e.g. \doublespace,\onehalfspace
 \usepackage{multicol} % make multiple columns within a set area
+\usepackage{lineno} % add line numbers
 
 \graphicspath{{images}} % add path so that you just have to reference img names
 
@@ -37,10 +38,15 @@
 % \onehalfspacing
 % \linespread{1.5}
 
+% create title information
 \maketitle
 
 % create table of contents
 \tableofcontents
+
+% add line numbers with lineno package
+% source: https://texblog.org/2012/02/08/adding-line-numbers-to-documents/
+\linenumbers
 
 Here is a pipe symbol without doing anything special: |.
 
