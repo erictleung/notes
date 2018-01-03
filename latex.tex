@@ -86,6 +86,13 @@ Here is a pipe symbol without doing anything special: |.
   Column 2 here
 \end{multicols}
 
+% crop images using popular graphicx package
+% source: https://tex.stackexchange.com/a/57420
+\begin{figure}
+  %  trim={<left> <lower> <right> <upper>} e.g. trims 5cm from left
+  \includegraphics[trim={5cm 0 0 0},clip]{example-image-a}
+\end{figure}
+
 % add References section to table of contents because it doesn't automatically
 % show up
 \addcontentsline{toc}{section}{References}
