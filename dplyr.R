@@ -39,3 +39,7 @@ df %>% filter(!grepl("\\d+", columnName)) # search for one or more numbers
 mtcars %>%
    group_by(carb) %>%
    filter(n() > 1)
+
+# filter by not in set
+mtcars %>%
+  filter(!cyl %in% c(4, 8))
