@@ -13,6 +13,7 @@ Tips, notes, and TIL I find useful or interesting.
 - [Hyperpolyglot][poly]
 - [Learn X in Y Minutes][minutes]
 - [texblog][texblog]
+- [dply][dply]
 
 [tldp]: http://tldp.org/
 [dd]: http://devdocs.io/
@@ -23,6 +24,7 @@ Tips, notes, and TIL I find useful or interesting.
 [poly]: http://hyperpolyglot.org/
 [minutes]: https://learnxinyminutes.com/
 [texblog]: http://texblog.org/
+[dply]: https://dply.co
 
 ## License
 
