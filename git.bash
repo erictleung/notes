@@ -177,3 +177,7 @@ git tag -l "v1.0*" # specific tags
 
 # git commit templates
 git config --global commit.template ~/.gittemplate
+
+# pull remote branch to local from scratch
+# source: https://stackoverflow.com/a/9537923/6873133
+git checkout --track origin/interesting-branch
