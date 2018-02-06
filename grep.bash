@@ -16,3 +16,10 @@ grep grep grep.bash /dev/null  # if you want the file name
 
 # show lines not showing pattern
 grep -v bash grep.bash
+
+# search all files in directory
+# source: https://stackoverflow.com/a/16957078/6873133
+grep -rnw . -e 'word'
+# -r = recursive
+# -n = line number
+# -w = match whole word
