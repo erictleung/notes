@@ -204,6 +204,7 @@ false && echo "OK"  # prints nothing
 # source: https://unix.stackexchange.com/a/3021
 du -s directory_name
 du -hs directory_name # human-readable size
+du -ch | grep total # get total size of current directory
 
 # get script name itself (put within a script to test)
 me=`basename "$0"`
