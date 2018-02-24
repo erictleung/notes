@@ -164,6 +164,15 @@ fruits=(Pineapple Tomato Banana) # another way to make arrays
 echo ${fruits[*]} # array expansion
 echo ${fruits[@]} # ...another way <- use this
 
+# another way to make arrays
+# source: https://stackoverflow.com/a/1336245/6873133
+A=( foo bar "a  b c" 42 )
+B=("${A[@]:1:2}")
+C=("${A[@]:1}")   # slice to the end of the array
+echo "${B[@]}"    # bar a  b c
+echo "${B[1]}"    # a  b c
+echo "${C[@]}"    # bar a  b c 42
+
 # execute previous commands
 !500 # execute 500th entry in history
 !! # execute last command
