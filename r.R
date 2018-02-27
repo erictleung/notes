@@ -11,6 +11,7 @@ library(tidyverse)  # packages to help create tidy data
 library(pwr)        # functions to help calculate power and sample size
 library(devtools)   # help create R packages
 library(pROC)       # help calculate ROC curves and metrics
+library(HMM)        # great, simple, demonstration of discrete Hidden Markov Models
 
 # require packages
 require(survival)
