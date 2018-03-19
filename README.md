@@ -2,6 +2,8 @@
 
 Tips, notes, and TIL I find useful or interesting.
 
+Inspired by https://github.com/kbroman/ProgrammingNotes.
+
 ## General Resources
 
 - [The Linux Documentation Project][tldp] (LDP)
