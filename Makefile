@@ -8,3 +8,4 @@
 # Cheatsheets
 #   - http://wiki.wlug.org.nz/MakefileHowto
 #   - http://martinvseticka.eu/temp/make/normal.html
+#   - https://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
