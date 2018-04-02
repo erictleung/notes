@@ -5,6 +5,15 @@
 # - http://r-pkgs.had.co.nz/
 # - https://cran.r-project.org/doc/manuals/r-release/R-exts.html
 
+# package development on Windows
+# - Rtools download https://cran.rstudio.com/bin/windows/Rtools/
+# - Rtools instructions https://cran.rstudio.com/bin/windows/Rtools/Rtools.txt
+# - https://github.com/stan-dev/rstan/wiki/Install-Rtools-for-Windows
+# - http://jtleek.com/modules/01_DataScientistToolbox/02_10_rtools
+# - Issues with Rtools installation
+#   - https://stackoverflow.com/questions/19885381/rtools-not-being-detected-by-r
+#   - https://stackoverflow.com/questions/33103203/rtools-is-not-being-detected-from-rstudio
+
 # useful packages
 # more: https://www.crantastic.org/
 library(tidyverse)  # packages to help create tidy data
