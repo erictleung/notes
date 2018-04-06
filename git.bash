@@ -1,20 +1,75 @@
 # git Notes
 
+# overview of cheatsheet
+# - configuration
+# - commit related
+# - git remotes
+# - misc commands
+
+# some cool tips on git
+# source: https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
+
+# configuration commands -----------------------------------------------
+
 # save your identity
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 
-# removing files
-git rm --cached example.txt # stop tracking file
+# deal with configuration settings
+git config --list # look at your config
+git config --global user.name "Joe Bob" # change global username to 'Job Bob'
+git config --global user.email joe@email.com # change global email
 
-# dealing with remotes
-git remote -v # looking at all remotes
-git remote rm example-remote # remove remote
-git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+# ignore file mode changes e.g. rw-r--r--
+# source: https://stackoverflow.com/a/1257613/6873133
+git config core.filemode false
+
+# git commit templates
+git config --global commit.template ~/.gittemplate
+
+# commit related commands ----------------------------------------------
 
 # squash commit with last commit and use new message
 git commit --amend -m "new message here"
 git commit --amend # keep previous commit message
+
+# look at changes you are about to make during a commit message
+git commit -v
+
+# easily "stash" away commits to use later
+git stash # stash away commits and changes
+git stash apply # un-stash commits and changes
+git stash save name-here # name stash to remember contents of stash
+git stash pop stash@{0} # apply particular stash where 0 is number
+
+# squashing multiple commits into one
+git rebase -i HEAD~n # where n is the last n commits made
+
+# uncommit a file
+# source: http://stackoverflow.com/a/15321456
+git reset --soft HEAD^ # or
+git reset --soft HEAD~1
+git reset HEAD path/to/unwanted_file
+git commit -c ORIG_HEAD # reuse original commit message
+
+# revert git repo to previous commit for exploration
+git checkout SHA_HASH_CODE
+
+# make commits in previous commit
+git checkout -b SHA_HASH_CODE
+
+# move commits to new branch
+git checkout oldBranch
+git branch newBranch
+git reset --hard HEAD~n # go back n commits
+git checkout newBranch # your n commits will be on the new branch
+
+# revert existing commits
+git revert HEAD         # revert previous commit
+git revert HEAD~3..HEAD # revert the last three commits
+git revert 0766c053     # revert specific commit
+
+# resetting commands ---------------------------------------------------
 
 # uncommit last commit but keep all changes
 git reset --soft HEAD^
@@ -32,11 +87,10 @@ git reset file-mistake.txt
 # unstage all uncommitted changes
 git reset
 
-# revert git repo to previous commit for exploration
-git checkout SHA_HASH_CODE
+# cleaning up commands -------------------------------------------------
 
-# make commits in previous commit
-git checkout -b SHA_HASH_CODE
+# removing files
+git rm --cached example.txt # stop tracking file
 
 # remove local/untracked file
 git clean -f -n # tell you what will be removed (-n)
@@ -45,76 +99,17 @@ git clean -fd # want to remove directories as well
 git clean -fX # want to remove only ignored files
 git clean -fx # want to remove both ignored and non-ignored files
 
-# easily "stash" away commits to use later
-git stash # stash away commits and changes
-git stash apply # un-stash commits and changes
-git stash save name-here # name stash to remember contents of stash
-git stash pop stash@{0} # apply particular stash where 0 is number
-
-# squashing multiple commits into one
-git rebase -i HEAD~n # where n is the last n commits made
-
-# rebase local branch onto master
-git checkout -b local-branch
-git rebase master
-
-# syncing a fork
-git fetch upstream # given an upstream has been set up
-git checkout master
-git merge upstream/master
+# status changes -------------------------------------------------------
 
 # use git to help find trailing whitespace
 git diff --check
-
-# deal with configuration settings
-git config --list # look at your config
-git config --global user.name "Joe Bob" # change global username to 'Job Bob'
-git config --global user.email joe@email.com # change global email
 
 # check differences between staged changed and before you made changes
 git diff --cached
 git diff --staged
 
-# look at changes you are about to make during a commit message
-git commit -v
-
 # show staged and unstaged changes (what would be committed with 'git commit -a')
 git diff HEAD
-
-# change branch name
-git branch -m new_branch_name # given you're on the branch you want to rename
-git branch -m new_branch_name old_branch_name
-git push origin :old_branch_name # deletes old branch name from remote origin
-git push origin origin new_branch_name # pushes new branch name
-
-# manage reference log information, being when tips of branches are updated
-git reflog
-
-# recover deleted local branch that exists in Github
-git checkout origin/BranchName # recovers read only pointer
-git checkout -b BranchName # creates new branch from old
-
-# rebase local branch to other things
-git checkout LocalBranch
-git fetch origin # grabs current remote
-git rebase origin/master # rebases local branch onto current remote
-git rebase master # rebase local branch onto local master
-
-# move commits to new branch
-git checkout oldBranch
-git branch newBranch
-git reset --hard HEAD~n # go back n commits
-git checkout newBranch # your n commits will be on the new branch
-
-# pull from origin branch
-git pull origin branch-name
-
-# uncommit a file
-# source: http://stackoverflow.com/a/15321456
-git reset --soft HEAD^ # or
-git reset --soft HEAD~1
-git reset HEAD path/to/unwanted_file
-git commit -c ORIG_HEAD # reuse original commit message
 
 # show changes made from commit
 git show COMMIT # where `COMMIT` is the commit ID
@@ -127,6 +122,60 @@ git show # verbose output
 git show --stat # show message and some stats
 git show --summary # get git commit message
 
+# look at changes from last commit
+git log -p -1
+git log -p -1 interesting.md # see commit for particular file
+
+# manage reference log information, being when tips of branches are updated
+git reflog
+
+# look at leader board of contributors
+#   -s : suppress committ description
+#   -n : sort output by number of commits
+git shortlog -sn
+
+# nice quick overview of logs
+git log --oneline --decorate --graph --all
+
+# list tags made alphabetically
+git tag
+git tag -l "v1.0*" # specific tags
+
+# git remotes ----------------------------------------------------------
+
+# dealing with remotes
+git remote -v # looking at all remotes
+git remote rm example-remote # remove remote
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+
+# rebase local branch onto master
+git checkout -b local-branch
+git rebase master
+
+# syncing a fork
+git fetch upstream # given an upstream has been set up
+git checkout master
+git merge upstream/master
+
+# change branch name
+git branch -m new_branch_name # given you're on the branch you want to rename
+git branch -m new_branch_name old_branch_name
+git push origin :old_branch_name # deletes old branch name from remote origin
+git push origin origin new_branch_name # pushes new branch name
+
+# recover deleted local branch that exists in Github
+git checkout origin/BranchName # recovers read only pointer
+git checkout -b BranchName # creates new branch from old
+
+# rebase local branch to other things
+git checkout LocalBranch
+git fetch origin # grabs current remote
+git rebase origin/master # rebases local branch onto current remote
+git rebase master # rebase local branch onto local master
+
+# pull from origin branch
+git pull origin branch-name
+
 # pull branch from remote
 # source: http://www.wetware.co.nz/2009/07/pull-a-git-branch-from-remote/
 git checkout -b new-branch origin/new-branch # sub origin for remote name
@@ -135,26 +184,11 @@ git checkout -b new-branch origin/new-branch # sub origin for remote name
 # source: http://stackoverflow.com/a/2286030/6873133
 git branch -u upstream/foo # where upstream is remote and foo is branch
 
-# look at leader board of contributors
-#   -s : suppress committ description
-#   -n : sort output by number of commits
-git shortlog -sn
+# pull remote branch to local from scratch
+# source: https://stackoverflow.com/a/9537923/6873133
+git checkout --track origin/interesting-branch
 
-# revert existing commits
-git revert HEAD         # revert previous commit
-git revert HEAD~3..HEAD # revert the last three commits
-git revert 0766c053     # revert specific commit
-
-# some cool tips on git
-# source: https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
-
-# ignore file mode changes e.g. rw-r--r--
-# source: https://stackoverflow.com/a/1257613/6873133
-git config core.filemode false
-
-# look at changes from last commit
-git log -p -1
-git log -p -1 interesting.md # see commit for particular file
+# misc commands --------------------------------------------------------
 
 # bundle commits in dire circumstances
 # source: https://git-scm.com/blog/2010/03/10/bundles.html
@@ -167,17 +201,3 @@ git bundle create commits.bundle master ^9a466c5 # create new bundle
 # ... move commits.bundle to original computer
 git bundle verify ../commits.bundle # verify commits in case missing
 git fetch ../commits.bundle master:other-master # move commits to branch
-
-# nice quick overview of logs
-git log --oneline --decorate --graph --all
-
-# list tags made alphabetically
-git tag
-git tag -l "v1.0*" # specific tags
-
-# git commit templates
-git config --global commit.template ~/.gittemplate
-
-# pull remote branch to local from scratch
-# source: https://stackoverflow.com/a/9537923/6873133
-git checkout --track origin/interesting-branch
