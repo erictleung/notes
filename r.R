@@ -315,3 +315,24 @@ lm(mpg ~ hp + cyl, data = mtcars) # mpg = b_0 + b_1*hp + h_2*cyl
 lm(mpg ~ hp:cyl, data = mtcars)   # mpg = b_0 + b_1*hp*cyl
 lm(mpg ~ hp*cyl, data = mtcars)   # mpg = b_0 + b_1*hp + h_2*cyl + h_3*hp*cyl
 lm(mpg ~ hp + cyl + hp:cyl, data = mtcars) # same as above
+
+# check any values are true with any
+x <- c(1, 2, 3)
+y <- c(1, 2)
+z <- c(4)
+x %in% y      # [1] TRUE TRUE FALSE
+any(x %in% y) # [1] TRUE
+x %in% z      # [1] FALSE FALSE FALSE
+any(x %in% z) # [1] FALSE
+
+# safe and reliable way to test two objects for being exactly equal
+identical(1, NULL) # [1] FALSE
+1 == NULL          # logical(0)
+
+# takes integer-valued vector and counts
+tabulate(c(2, 3, 5))          # [1] 0 1 1 0 1
+tabulate(c(2,3,5), nbin = 10) # [1] 0 1 1 0 1 0 0 0 0 0
+
+# generalized rename of data frame columns
+# source: https://stackoverflow.com/a/16490387/
+names(df)[names(df) == 'old.var.name'] <- 'new.var.name'
