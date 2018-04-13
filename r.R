@@ -336,3 +336,8 @@ tabulate(c(2,3,5), nbin = 10) # [1] 0 1 1 0 1 0 0 0 0 0
 # generalized rename of data frame columns
 # source: https://stackoverflow.com/a/16490387/
 names(df)[names(df) == 'old.var.name'] <- 'new.var.name'
+
+# row-wise sums
+# source: https://stackoverflow.com/a/31219524/6873133
+iris %>% mutate(sum = Reduce("+", .[1:4])) # use magrittr pipe
+iris$sum <- rowSums(iris[, 1:4]) # base function
