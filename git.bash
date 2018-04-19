@@ -141,6 +141,10 @@ git log --oneline --decorate --graph --all
 git tag
 git tag -l "v1.0*" # specific tags
 
+# see files that were changed last commit
+# source: https://stackoverflow.com/a/2232490/
+git show --name-status
+
 # git remotes ----------------------------------------------------------
 
 # dealing with remotes
