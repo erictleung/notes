@@ -14,13 +14,16 @@
 #   - https://stackoverflow.com/questions/19885381/rtools-not-being-detected-by-r
 #   - https://stackoverflow.com/questions/33103203/rtools-is-not-being-detected-from-rstudio
 
-# useful packages
+# useful packages I'd recommend
 # more: https://www.crantastic.org/
 library(tidyverse)  # packages to help create tidy data
 library(pwr)        # functions to help calculate power and sample size
 library(devtools)   # help create R packages
 library(pROC)       # help calculate ROC curves and metrics
 library(HMM)        # great, simple, demonstration of discrete Hidden Markov Models
+library(ggpubr)     # ggplot2-based publication ready plots
+library(UpSetR)     # implementation of UpSet set visualization by Lex, Gehlenborg, et al.
+library(skimr)      # frictionless, pieable approach to dealing with summary statistics
 
 # require packages
 require(survival)
