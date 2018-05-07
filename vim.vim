@@ -1,3 +1,8 @@
+" resources
+" - Vim Cheatsheet http://vimsheet.com/
+" - Five Minute Vimscript http://andrewscala.com/vimscript/
+" - Learn Vimscript the Hard Way http://learnvimscriptthehardway.stevelosh.com/
+
 " read Vim manual in Vim
 help
 
