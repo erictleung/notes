@@ -218,3 +218,6 @@ du -ch | grep total # get total size of current directory
 
 # get script name itself (put within a script to test)
 me=`basename "$0"`
+
+# dump HTML contents of page to file using lynx
+lynx -dump http://www.google.com >> google.txt
