@@ -2,6 +2,7 @@
 
 # Useful resources
 # - https://zwischenzugs.com/2018/01/21/ten-more-things-i-wish-id-known-about-bash/
+# - http://conqueringthecommandline.com/book
 
 # cd to previous directory
 cd -
