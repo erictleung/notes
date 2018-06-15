@@ -1,7 +1,8 @@
-# dplyr Notes
+# dplyr Notes and Tidyverse Functions
 
 # load library
 library(dplyr)
+library(broom)
 
 # grep through values in data frame
 # adapted from: http://stackoverflow.com/a/26766945
@@ -43,3 +44,10 @@ mtcars %>%
 # filter by not in set
 mtcars %>%
   filter(!cyl %in% c(4, 8))
+
+# two sample t-test on tidy data
+dt <- data.frame(
+  species = c(rep("ARGAFF",6), rep("BATABY",6)),
+  region = rep(c("EQ","OMZ"),6),
+  N15 = rnorm(12,10,1))
+dt_result <- dt %>% group_by(species) %>% do(tidy(t.test(N15 ~ region, data = .)))
