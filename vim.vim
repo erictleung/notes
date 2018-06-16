@@ -104,3 +104,7 @@ set exrc
 
 " restrict usage of commands to non-default .vimrc files
 set secure
+
+" capitalize first letter of first word in each line
+" inspired by: https://stackoverflow.com/a/17440797/
+" :%s/\<./\u&/g
