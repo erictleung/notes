@@ -15,7 +15,8 @@ Inspired by https://github.com/kbroman/ProgrammingNotes.
 - [Hyperpolyglot][poly]
 - [Learn X in Y Minutes][minutes]
 - [texblog][texblog]
-- [dply][dply]
+- [dply][dply] - Free cloud server for 2 hours
+- [Cloud Shell][googleshell] - Cloud shell by Google
 
 [tldp]: http://tldp.org/
 [dd]: http://devdocs.io/
@@ -27,6 +28,7 @@ Inspired by https://github.com/kbroman/ProgrammingNotes.
 [minutes]: https://learnxinyminutes.com/
 [texblog]: http://texblog.org/
 [dply]: https://dply.co
+[googleshell]: https://console.cloud.google.com/cloudshell
 
 ## License
 
