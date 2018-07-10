@@ -23,3 +23,9 @@ grep -rnw . -e 'word'
 # -r = recursive
 # -n = line number
 # -w = match whole word
+
+# search through files, add -n for line numbers
+# source: https://superuser.com/a/614589
+grep "some string" . -R
+# H for file printing, i for case-insensitive, R for recursive search, E for regex 
+grep -HiRE "some string|other string" . 
