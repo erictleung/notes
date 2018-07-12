@@ -52,7 +52,9 @@ dt <- data.frame(
   species = c(rep("ARGAFF",6), rep("BATABY",6)),
   region = rep(c("EQ","OMZ"),6),
   N15 = rnorm(12,10,1))
-dt_result <- dt %>% group_by(species) %>% do(tidy(t.test(N15 ~ region, data = .)))
+dt_result <- dt %>%
+  group_by(species) %>%
+  do(broom::tidy(t.test(N15 ~ region, data = .)))
 
 # conditional selection of columns
 iris %>% tbl_df %>% select_if(is.double) # select cols only type double
