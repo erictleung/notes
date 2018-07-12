@@ -253,7 +253,7 @@ colSums(exmple != 0)
 #   - Rda - short for RData
 #   - RData - multiple data, use with save(), load(), attach(), etc
 #   - Rds - *single* R object
-# source: https://stackoverflow.com/a/21370351/6873133
+# source: https://stackoverflow.com/a/21370351/
 
 # directory related commands
 dir.exists("directory")  # check existing directory
@@ -284,7 +284,7 @@ x <- factor(x, levels(x)[c(4, 5, 1:3)])
 print(levels(x)) # Levels: d e a b c
 
 # cut vector into defined intervals
-# source: https://stackoverflow.com/a/5746634/6873133
+# source: https://stackoverflow.com/a/5746634/
 x <- sample(0:20, 100, replace = TRUE)
 cut(x, breaks = c(0, 10, 20), include.lowest = TRUE)
 # [1] (10,20] [0,10]  [0,10]  (10,20] (10,20] (10,20] [0,10]  (10,20] (10,20]
@@ -300,9 +300,9 @@ n <- 10
 mat <- matrix(runif(n^2), ncol = n)
 mat <- mat / rowSums(mat)
 
-# check if all values equal/identical
-identical(1, 2, 3)  # FALSE
-identical(3, 3, 3)  # TRUE
+# check if two values/objects are equal/identical
+identical(1, 2)  # FALSE
+identical(3, 3)  # TRUE
 
 # S3-S4-R5 dictionary
 # source: https://stevencarlislewalker.wordpress.com/s3-s4-dictionary/
@@ -341,6 +341,12 @@ tabulate(c(2,3,5), nbin = 10) # [1] 0 1 1 0 1 0 0 0 0 0
 names(df)[names(df) == 'old.var.name'] <- 'new.var.name'
 
 # row-wise sums
-# source: https://stackoverflow.com/a/31219524/6873133
+# source: https://stackoverflow.com/a/31219524/
 iris %>% mutate(sum = Reduce("+", .[1:4])) # use magrittr pipe
 iris$sum <- rowSums(iris[, 1:4]) # base function
+
+# access table elements
+# source: https://stackoverflow.com/a/10104448/
+iris_tab <- table(iris$Species)
+as.vector(iris_tab) # values only
+names(iris_tab) # "column" names only
