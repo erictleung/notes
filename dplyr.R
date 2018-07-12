@@ -38,7 +38,7 @@ iris %>% tbl_df %>% as.data.frame
 df %>% filter(!grepl("\\d+", columnName)) # search for one or more numbers
 
 # find duplicate rows or values in columns
-# source: https://stackoverflow.com/a/28244567/6873133
+# source: https://stackoverflow.com/a/28244567
 mtcars %>%
    group_by(carb) %>%
    filter(n() > 1)
@@ -48,6 +48,7 @@ mtcars %>%
   filter(!cyl %in% c(4, 8))
 
 # two sample t-test on tidy data
+# source: https://stats.stackexchange.com/a/168420
 dt <- data.frame(
   species = c(rep("ARGAFF",6), rep("BATABY",6)),
   region = rep(c("EQ","OMZ"),6),
