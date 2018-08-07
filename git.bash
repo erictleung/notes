@@ -27,6 +27,9 @@ git config core.filemode false
 # git commit templates
 git config --global commit.template ~/.gittemplate
 
+# quickly edit git configs
+git config --global --edit
+
 # commit related commands ----------------------------------------------
 
 # squash commit with last commit and use new message
