@@ -56,3 +56,14 @@ k <- ggplot(mydata,aes(x=a,y=b)) +
   geom_point(data=mydata[10:13, ], aes(x=a, y=b), colour="red", size=5) + 
   annotation_custom(tableGrob(mytable, rows=NULL), 
                     xmin=35, xmax=50, ymin=-2.5, ymax=-1)
+
+# add counts above bars in bar graph
+# sources:
+# - https://stackoverflow.com/a/23770326/
+# - https://stackoverflow.com/a/19853744/
+# - https://stackoverflow.com/a/3695592/
+# - But may be replaced with calc() eventually
+#   - See https://stackoverflow.com/a/17506197/
+dd <- data.frame(x = rnorm(100, 5, 2))
+ggplot(dd, aes(x = x)) + geom_histogram() +
+  stat_bin(aes(y = ..count.., label = ..count..), geom = "text", vjust = -0.5)
