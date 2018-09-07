@@ -222,3 +222,6 @@ me=`basename "$0"`
 # dump HTML contents of page to file using lynx
 # source: https://unix.stackexchange.com/a/83987
 lynx -dump http://www.google.com >> google.txt
+
+# remove files without error if doesn't exist
+rm -f file.txt
