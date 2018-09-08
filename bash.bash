@@ -224,4 +224,5 @@ me=`basename "$0"`
 lynx -dump http://www.google.com >> google.txt
 
 # remove files without error if doesn't exist
+# source: https://superuser.com/a/76068
 rm -f file.txt
