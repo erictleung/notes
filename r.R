@@ -179,7 +179,7 @@ readIn <- read.table(textConnection('Competition FreeLiquor RateofReturn Default
 1    Yes    Yes    High    No'))
 
 # boolean operations
-# source: http://stackoverflow.com/a/6559049/6873133
+# source: http://stackoverflow.com/a/6559049/
 # source: https://stat.ethz.ch/R-manual/R-devel/library/base/html/Logic.html
 x <- TRUE
 y <- FALSE
@@ -195,13 +195,13 @@ T == TRUE
 F == FALSE
 
 # write to file with text
-# source: http://stackoverflow.com/a/2470277/6873133
+# source: http://stackoverflow.com/a/2470277/
 fileConn <- file("output.txt")
 writeLines(c("Hello", "World"), fileConn)
 close(fileConn)
 
 # repeat characters with replicate or rep
-# source: http://stackoverflow.com/a/22359177/6873133
+# source: http://stackoverflow.com/a/22359177/
 replicate(2, "doubleString")
 # [1] "doubleString" "doubleString"
 rep("doubleString", 2)
@@ -210,7 +210,7 @@ paste(rep("doubleString", 2), collapse = "")
 # [1] "doubleStringdoubleString
 
 # install required packages if not already installed
-# source: http://stackoverflow.com/a/4090208/6873133
+# source: http://stackoverflow.com/a/4090208/
 list.of.packages <- c("ggplot2", "Rcpp")
 installedPkges <- installed.packages()[, "Package"]
 new.packages <- list.of.packages[!(list.of.packages %in% installedPkges)]
@@ -231,21 +231,21 @@ duplicated(repeatX, fromLast = TRUE)  # starts from end
 # [1] FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE
 
 # drop factors from subset
-# source: http://stackoverflow.com/a/4284931/6873133
+# source: http://stackoverflow.com/a/4284931/
 factor(letters[1:5]) %>% .[1:3] %>% droplevels() %>% levels
 
 # possible origin of R code names
-# source: http://stackoverflow.com/a/13496840/6873133
+# source: http://stackoverflow.com/a/13496840/
 
 # get parent directory
-# source: http://stackoverflow.com/a/17317210/6873133
+# source: http://stackoverflow.com/a/17317210/
 dirname(getwd())
 
 # write out Excel files, with specific sheets, openxlsx package
-# source: https://stackoverflow.com/a/43118134/6873133
+# source: https://stackoverflow.com/a/43118134/
 
 # count number of non-zero elements in each column
-# source: https://stackoverflow.com/a/22286988/6873133
+# source: https://stackoverflow.com/a/22286988/
 example <- matrix(sample(c(0,0,0,100),size=70,replace=T),ncol=7)
 colSums(exmple != 0)
 
@@ -350,3 +350,7 @@ iris$sum <- rowSums(iris[, 1:4]) # base function
 iris_tab <- table(iris$Species)
 as.vector(iris_tab) # values only
 names(iris_tab) # "column" names only
+
+# write tab-separated files (.tsv) with write.table
+# source: https://stackoverflow.com/a/17108345/
+write.table(test, file='test.tsv', quote=FALSE, sep='\t', col.names = NA)
