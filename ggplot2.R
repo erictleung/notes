@@ -38,6 +38,12 @@ ggplot(data = diamonds, mapping = aes(x = clarity)) + geom_bar(aes(fill = cut))+
         axis.text.x = element_blank(),
         axis.ticks.x = element_blank())
 
+# move around x-axis label
+# source: https://ggplot2.tidyverse.org/reference/element.html
+# inspired by: https://twitter.com/tjmahr/status/1039517803315744768
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) +
+  geom_point() +
+  theme(axis.title.x = element_text(hjust = 0.25, vjust = 7))
 # draw ellipses around scatterplot clusters
 # default, 95% of data drawn around
 # source: http://ggplot2.tidyverse.org/reference/stat_ellipse.html
