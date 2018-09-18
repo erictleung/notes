@@ -354,3 +354,8 @@ names(iris_tab) # "column" names only
 # write tab-separated files (.tsv) with write.table
 # source: https://stackoverflow.com/a/17108345/
 write.table(test, file='test.tsv', quote=FALSE, sep='\t', col.names = NA)
+
+# read in data and specify row names
+# row.names can be numbered col with names
+# source: https://stackoverflow.com/a/13271884/
+read.table(file = "foo.txt", row.names = 1)
