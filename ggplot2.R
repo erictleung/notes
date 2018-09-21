@@ -73,3 +73,9 @@ k <- ggplot(mydata,aes(x=a,y=b)) +
 dd <- data.frame(x = rnorm(100, 5, 2))
 ggplot(dd, aes(x = x)) + geom_histogram() +
   stat_bin(aes(y = ..count.., label = ..count..), geom = "text", vjust = -0.5)
+
+# add vertical line to plots
+# source: https://stackoverflow.com/a/19622114/
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) +
+  geom_point() +
+  geom_vline(xintercept = 3)
