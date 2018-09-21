@@ -359,3 +359,9 @@ write.table(test, file='test.tsv', quote=FALSE, sep='\t', col.names = NA)
 # row.names can be numbered col with names
 # source: https://stackoverflow.com/a/13271884/
 read.table(file = "foo.txt", row.names = 1)
+
+# go from matrix to vector
+# source: https://stackoverflow.com/a/3823665/
+m <- matrix(1:12, 3, 4)
+as.vector(m)    # Go by columns
+as.vector(t(m)) # Go by rows
