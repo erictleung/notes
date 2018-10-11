@@ -108,3 +108,7 @@ set secure
 " capitalize first letter of first word in each line
 " inspired by: https://stackoverflow.com/a/17440797/
 " :%s/\<./\u&/g
+
+" word count buffer
+" Press g then Ctrl-g
+" E.g. Selected 6 of 358 Lines; 37 of 2281 Words; 186 of 13426 Bytes
