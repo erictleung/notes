@@ -113,6 +113,17 @@ du -a . | sort -nr | head
 # see https://www.moncefbelyamani.com/find-the-largest-folders-on-your-mac-in-one-keystroke-with-keyboard-maestro-or-quicksilver/
 du -k . | awk '$1 > 500000' | sed -e 's_^\([09-]*\)_\1 KB_' | sort -nr
 
+# calculate size of directory and contents
+# source: https://unix.stackexchange.com/a/3021
+du -s directory_name
+du -hs directory_name # human-readable size
+du -ch | grep total # get total size of current directory
+
+# calculate cumulative disk usage of directories
+# source: https://unix.stackexchange.com/a/185777/
+du -sh -- *     # non-hidden directories
+du -sh -- * .*  # hidden and non-hidden
+
 # convert a tab-delimited file to a comma-delimited file
 tr '\t' ',' < file.tsv > file.csv
 
@@ -213,12 +224,6 @@ unzip zipped-file.zip -d target-directory
 # source: https://unix.stackexchange.com/a/187148
 false ; echo "OK"   # prints "OK"
 false && echo "OK"  # prints nothing
-
-# calculate size of directory and contents
-# source: https://unix.stackexchange.com/a/3021
-du -s directory_name
-du -hs directory_name # human-readable size
-du -ch | grep total # get total size of current directory
 
 # get script name itself (put within a script to test)
 me=`basename "$0"`
