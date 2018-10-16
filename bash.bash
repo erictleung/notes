@@ -5,6 +5,7 @@
 # - http://conqueringthecommandline.com/book
 # - http://mywiki.wooledge.org/BashGuide
 # - http://redsymbol.net/articles/unofficial-bash-strict-mode/
+# - https://kvz.io/blog/2013/11/21/bash-best-practices/
 
 # cd to previous directory
 cd -
