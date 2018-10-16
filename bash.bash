@@ -4,6 +4,7 @@
 # - https://zwischenzugs.com/2018/01/21/ten-more-things-i-wish-id-known-about-bash/
 # - http://conqueringthecommandline.com/book
 # - http://mywiki.wooledge.org/BashGuide
+# - http://redsymbol.net/articles/unofficial-bash-strict-mode/
 
 # cd to previous directory
 cd -
