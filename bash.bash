@@ -261,3 +261,9 @@ var=$((var+1))
 yell() { echo "$0: $*" >&2; }
 die() { yell "$*"; exit 111; }
 try() { "$@" || die "cannot $*"; }
+
+# get file names of files without path
+# source: https://stackoverflow.com/a/965072/
+filename=$(basename -- "$fullfile")
+extension="${filename##*.}"
+justfile="${filename%.*}"
