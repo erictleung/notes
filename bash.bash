@@ -267,3 +267,9 @@ try() { "$@" || die "cannot $*"; }
 filename=$(basename -- "$fullfile")
 extension="${filename##*.}"
 justfile="${filename%.*}"
+
+# display commands from bash script
+# source: https://stackoverflow.com/a/31392037/
+set -x # start echoing commands
+ls
+set +x # stop echoing commands
