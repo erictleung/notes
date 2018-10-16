@@ -228,3 +228,14 @@ lynx -dump http://www.google.com >> google.txt
 # remove files without error if doesn't exist
 # source: https://superuser.com/a/76068
 rm -f file.txt
+
+# Or and And operations
+# -a, && = and
+# -o, || = or
+# source: https://stackoverflow.com/a/16203126/
+if [ 1 == 1 ] || [ 2 == 2 ]; then
+    echo "This is true."
+fi
+if [ 1 == 1 -o 2 == 2]; then
+    echo "This is also true."
+fi
