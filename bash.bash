@@ -250,3 +250,9 @@ var=$((var+1))
 ((var=var+1))
 ((var+=1))
 ((var++))
+
+# Three-Fingered Claw technique for exiting
+# source: https://stackoverflow.com/a/25515370/
+yell() { echo "$0: $*" >&2; }
+die() { yell "$*"; exit 111; }
+try() { "$@" || die "cannot $*"; }
