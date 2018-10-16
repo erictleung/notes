@@ -239,3 +239,12 @@ fi
 if [ 1 == 1 -o 2 == 2]; then
     echo "This is also true."
 fi
+
+# increment numeric variables
+# note: double parentheses permit arthimetic expansion and evaluation
+# source: https://askubuntu.com/a/385532
+var=0
+var=$((var+1))
+((var=var+1))
+((var+=1))
+((var++))
