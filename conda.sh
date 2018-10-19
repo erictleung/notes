@@ -35,3 +35,8 @@ conda list  # list all package installed
 conda search anotherPkge  # search for package to install
 conda update oldPkge  # update old packages
 conda remove unusedPkge  # uninstall/remove unnecessary packages
+
+# extract environment name from within
+# source: https://stackoverflow.com/a/42660674/
+echo $CONDA_DEFAULT_ENV  # Environment name
+echo $CONDA_PREVIX       # Environment path
