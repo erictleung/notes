@@ -102,6 +102,7 @@ screen # terminal emulation
 sed
 seq
 set # by itself will print all functions
+sftp # interactive FTP
 shutdown
 sleep
 sort
