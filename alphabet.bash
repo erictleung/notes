@@ -103,6 +103,7 @@ sed
 seq
 set # by itself will print all functions
 sftp # interactive FTP
+shuf # generate random permutations
 shutdown
 sleep
 sort
