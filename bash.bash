@@ -273,3 +273,7 @@ justfile="${filename%.*}"
 set -x # start echoing commands
 ls
 set +x # stop echoing commands
+
+# shuffle around elements
+# source: https://unix.stackexchange.com/a/189028/
+shuf -e $(seq 1 10)
