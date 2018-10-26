@@ -3,7 +3,9 @@ require(ggplot2)
 
 # useful ggplot2 extensions or compatible packages
 # - Publication ready plots https://github.com/kassambara/ggpubr
-# - Composer of ggplots https://github.com/thomasp85/patchwork
+# - Composer of ggplot2s
+#     - https://github.com/thomasp85/patchwork
+#     - https://github.com/wilkelab/cowplot
 # - A List of ggplot2 extensions http://www.ggplot2-exts.org/
 
 # plot ggplots side by side
