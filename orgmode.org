@@ -1,0 +1,5 @@
+#+TITLE: Orgmode Notes
+
+* TODO Items
+
+~C-c C-x o~ to trigger ordered property of checkboxes.
