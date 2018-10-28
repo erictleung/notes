@@ -4,6 +4,8 @@
 
 ** Remove all code block results
 
+Source: http://lists.gnu.org/archive/html/emacs-orgmode/2011-07/msg01572.html
+
 #+BEGIN_SRC emacs-lisp :results silent
 (org-babel-map-src-blocks nil (org-babel-remove-result))
 #+END_SRC
