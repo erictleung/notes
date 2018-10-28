@@ -1,5 +1,13 @@
 #+TITLE: Orgmode Notes
 
+* Babel
+
+** Remove all code block results
+
+#+BEGIN_SRC emacs-lisp :results silent
+(org-babel-map-src-blocks nil (org-babel-remove-result))
+#+END_SRC
+
 * TODO Items
 
 ~C-c C-x o~ to trigger ordered property of checkboxes.
