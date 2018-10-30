@@ -65,6 +65,28 @@ k <- ggplot(mydata,aes(x=a,y=b)) +
   annotation_custom(tableGrob(mytable, rows=NULL), 
                     xmin=35, xmax=50, ymin=-2.5, ymax=-1)
 
+# another version to add tables to plots
+# source: https://stackoverflow.com/a/40335941/
+library(gridExtra)
+library(cowplot)
+df <- data.frame(
+    dose=c(10,0.625,2.5,0.15625,0.0390625,0.0024414,0.00976562,0.00061034,10,
+           0.625,2.5,0.15625,0.0390625,0.0024414,0.00976562,0.00061034,10,
+           0.625,2.5,0.15625,0.0390625,0.0024414,0.00976562,0.00061034),
+    viability=c(6.117463479317,105.176885855348,57.9126197628863,81.9068445005286,
+                86.484379347143,98.3093580807309,96.4351897372596,81.831197750164,
+                27.3331232120347,85.2221817678203,80.7904933803092,91.9801454635583,
+                82.4963735273569,110.440066995265,90.1705406346481,76.6265869905362,
+                11.8651732228561,88.9673125759484,35.4484427232156,78.9756635057238,
+                95.836828982968,117.339025930735,82.0786828300557,95.0717213053837),
+    stringsAsFactors = FALSE)
+ann.df <- data.frame(
+    "param" = c("Slope", "Lower", "Upper", "ED50"),
+    "value" = c(5.70, 15.10, 91.40, 2.61),
+    stringsAsFactors = FALSE)
+p <- ggplot(df,aes(x = dose, y = viability)) + geom_point()
+ggdraw(p) + draw_grob(tableGrob(ann.df), x = 0.1, y = 0.2)
+
 # add counts above bars in bar graph
 # sources:
 # - https://stackoverflow.com/a/23770326/
