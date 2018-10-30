@@ -81,3 +81,12 @@ ggplot(dd, aes(x = x)) + geom_histogram() +
 iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) +
   geom_point() +
   geom_vline(xintercept = 3)
+
+# change x- and y-axis limits
+# source: https://stackoverflow.com/a/3606798/
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) +
+  geom_point() +
+  coord_cartesian(xlim = c(5, 7)) # Without clipping data
+iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) +
+  geom_point() +
+  scale_x_continuous(c(5, 7)) # Removes unseen data points
