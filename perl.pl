@@ -1,5 +1,9 @@
 # Perl Notes
 
+# Resources
+# - Learn Perl https://www.perl.org/learn.html
+# - Modules https://www.perl.org/cpan.html
+
 use strict;
 use warnings;
 
@@ -51,3 +55,9 @@ foreach my $first (@two) { # loop through first dimension of array
         print "$_ ";
     }
 }
+
+# install Perl modules
+# source: https://www.cpan.org/modules/INSTALL.html
+# recommended modules https://metacpan.org/pod/Task::Kensho#RECOMMENDED-MODULES
+# cpan App::cpanminus
+# cpanm Devel::REPL
