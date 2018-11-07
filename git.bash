@@ -221,3 +221,8 @@ git bundle create commits.bundle master ^9a466c5 # create new bundle
 # ... move commits.bundle to original computer
 git bundle verify ../commits.bundle # verify commits in case missing
 git fetch ../commits.bundle master:other-master # move commits to branch
+
+# retrieve hash for last commit
+# source: https://stackoverflow.com/a/949391/
+git rev-parse HEAD
+git rev-parse --verfy HEAD
