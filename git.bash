@@ -148,6 +148,11 @@ git tag -l "v1.0*" # specific tags
 # source: https://stackoverflow.com/a/2232490/
 git show --name-status
 
+# list files in commit
+# source: https://stackoverflow.com/a/424142/
+git diff-tree --no-commit-id --name-only -r bd61ad98 # meant to be programmatic
+git show --pretty="" --name-only bd61ad98 # less preferred for scripts
+
 # git remotes ----------------------------------------------------------
 
 # dealing with remotes
