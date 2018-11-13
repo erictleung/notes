@@ -1,9 +1,6 @@
 # Macport Commands
 # Notes: Most will need sudo to run
 
-# remove inactive/old package versions
-port uninstall inactive
-
 # update Macports itself
 port selfupdate
 
@@ -22,3 +19,9 @@ port uninstall inactive
 # search exact package name
 # source: http://johnlaudun.org/20140721-install-r-with-macports/
 port search --exact R
+
+# clean up caches and inactive package versions
+# source: https://apple.stackexchange.com/a/267184
+port uninstall inactive
+port clean --all uninstalled
+port clean installed
