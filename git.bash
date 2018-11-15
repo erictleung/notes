@@ -226,3 +226,6 @@ git fetch ../commits.bundle master:other-master # move commits to branch
 # source: https://stackoverflow.com/a/949391/
 git rev-parse HEAD
 git rev-parse --verfy HEAD
+
+# remove branches no longer on remote server
+git fetch origin --prune
