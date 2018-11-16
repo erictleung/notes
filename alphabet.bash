@@ -2,33 +2,33 @@
 # Inspired by A-Z Index of Bash Command Line http://ss64.com/bash/
 
 ## A
-alias
-awk
+alias # create keyboard shortcuts
+awk # tabular data manipulation tool
 
 ## B
 bg # resume jobs in background
-bzip2
+bzip2 # similar to gzip being data compressors
 
 ## C
 cal # displays a calendar
-cat
-cd
-chmod
-chown
-clear
+cat # display contents and combine files
+cd # change directories
+chmod # change file permissions
+chown # change file ownership
+clear # clear refresh terminal window
 column # columnate lists
-cp
+cp # copy files and directories
 
 ## D
 date # display or set date and time
-df
-du
+df # disk free space
+du # disk usage by files
 
 ## E
-echo
+echo # print out contents of variables and strings
 emacs # text editor
 env # run program in environment or print env vars
-export
+export # built-in marks env vars to be exported in any child process
 
 ## F
 fdisk # help partition hard drive
@@ -37,9 +37,9 @@ file # determine file type
 find
 
 ## G
-grep
+grep # regular expressions on file contents
 groups # list current user and groups they belong to
-gzip
+gzip # data compression
 
 ## H
 head
@@ -48,7 +48,7 @@ htop
 
 ## I
 id # print real and effective user and group IDs
-if
+if # conditional check
 ifconfig # configure network interface
 irb # Ruby interpreter
 istats # iStats - sudo gem install iStats
