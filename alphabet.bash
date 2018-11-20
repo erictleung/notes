@@ -138,6 +138,7 @@ vim
 
 ## W
 w # show who is logged on and what they are doing
+watch # periodically run command
 wc
 wget
 whatis # searches for short description of command
