@@ -285,3 +285,6 @@ shuf -e $(seq 1 10)
 # HostName 1.1.1.1
 # User root
 # Port 31415
+
+# breaking out of ssh locks
+# source: https://askubuntu.com/a/29952
