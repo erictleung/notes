@@ -277,3 +277,11 @@ set +x # stop echoing commands
 # shuffle around elements
 # source: https://unix.stackexchange.com/a/189028/
 shuf -e $(seq 1 10)
+
+# alias SSH connections
+# within .ssh/config
+# Host cryptic
+# IdentifyFile ~/.ssh/custom_id_rsa
+# HostName 1.1.1.1
+# User root
+# Port 31415
