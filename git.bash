@@ -48,6 +48,12 @@ git stash pop stash@{0} # apply particular stash where 0 is number
 # squashing multiple commits into one
 git rebase -i HEAD~n # where n is the last n commits made
 
+# another way of squashing commits e.g. three commits
+git reset HEAD~3
+git add
+git commit -am "Fix this bug"
+git push --force
+
 # uncommit a file
 # source: http://stackoverflow.com/a/15321456
 git reset --soft HEAD^ # or
