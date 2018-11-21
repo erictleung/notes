@@ -239,3 +239,7 @@ git fetch origin --prune
 # show history of function
 git log -L :myFunction:myFile.js # go by function
 git log -L 1,2:myFile.js # go by line numbers
+
+# specify commit by ancestry
+git show op3d1k2f^
+git show op3d1k2f~
