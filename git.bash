@@ -235,3 +235,7 @@ git rev-parse --verfy HEAD
 
 # remove branches no longer on remote server
 git fetch origin --prune
+
+# show history of function
+git log -L :myFunction:myFile.js # go by function
+git log -L 1,2:myFile.js # go by line numbers
