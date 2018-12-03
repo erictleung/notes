@@ -1,5 +1,10 @@
 # R Notes
 
+# learning resources
+# - https://adv-r.hadley.nz/
+# - https://csgillespie.github.io/efficientR/
+# - http://www.cookbook-r.com/
+
 # package development
 # - http://www.masalmon.eu/2017/12/11/goodrpackages/
 # - http://r-pkgs.had.co.nz/
