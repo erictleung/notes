@@ -288,3 +288,10 @@ shuf -e $(seq 1 10)
 
 # breaking out of ssh locks
 # source: https://askubuntu.com/a/29952
+
+# rsync with sensible flags
+# -a = archive mode
+# -v = verbose
+# -k = transform symlinks to directory into referent directory
+# -P = progress bar with partially transferred files
+rsync -avkP srcfile destfile
