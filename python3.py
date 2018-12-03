@@ -87,3 +87,8 @@ for idx, val in enumerate(range(10)):
 a = [1, 2, 5, 2, 3]
 b = [1, 2, 4]
 print([a[i] for i in b])
+
+# reload modules
+# source: https://stackoverflow.com/a/31906907/
+from importlib import reload
+reload(modulename)
