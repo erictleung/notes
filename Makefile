@@ -2,6 +2,7 @@
 
 # General
 #   - Makefiles require tabs (http://stackoverflow.com/a/28720186/6873133)
+#   - Quick incremental tutorial http://makefiletutorial.com/
 # Resources
 #   - http://swcarpentry.github.io/make-novice/
 #   - https://www.gnu.org/software/make/manual/make.html
