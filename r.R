@@ -370,3 +370,7 @@ read.table(file = "foo.txt", row.names = 1)
 m <- matrix(1:12, 3, 4)
 as.vector(m)    # Go by columns
 as.vector(t(m)) # Go by rows
+
+# check dimension names of object
+# source: https://stackoverflow.com/a/32314627/
+dimnames(iris)
