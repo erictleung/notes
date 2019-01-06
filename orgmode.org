@@ -10,6 +10,28 @@ Source: http://lists.gnu.org/archive/html/emacs-orgmode/2011-07/msg01572.html
 (org-babel-map-src-blocks nil (org-babel-remove-result))
 #+END_SRC
 
+** Change how babel handles output
+
+Use ~:results output~ to print out some output from languages.
+
+#+BEGIN_SRC python
+def f():
+    print("Hello, world!")
+#+END_SRC
+
+#+RESULTS:
+: None
+
+But if you add the results output then
+
+#+BEGIN_SRC python :results output
+def f():
+    print("Hello, world!")
+#+END_SRC
+
+#+RESULTS:
+: Hello, world!
+
 * TODO Items
 
 ~C-c C-x o~ to trigger ordered property of checkboxes.
