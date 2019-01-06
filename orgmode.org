@@ -32,6 +32,8 @@ def f():
 #+RESULTS:
 : Hello, world!
 
+Source: https://emacs.stackexchange.com/a/17928/
+
 * TODO Items
 
 ~C-c C-x o~ to trigger ordered property of checkboxes.
