@@ -1,5 +1,19 @@
 #+TITLE: Orgmode Notes
 
+* Tables
+
+** Export Specific Table
+
+Use ~org-table-export~ to export specific table within org-mode document.
+
+After running this function from ~M-x org-table-export~, it'll prompt you
+to name the save file, and then how to save the table.
+
+Some examples are:
+
+- ~orgtbl-to-tsv~
+- ~orgtbl-to-csv~
+
 * Babel
 
 ** Remove all code block results
