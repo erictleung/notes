@@ -16,6 +16,12 @@ Some examples are:
 
 * Babel
 
+** Specific header arguments
+
+See below for possible header arguments for code blocks.
+
+https://orgmode.org/manual/Specific-header-arguments.html
+
 ** Remove all code block results
 
 Source: http://lists.gnu.org/archive/html/emacs-orgmode/2011-07/msg01572.html
