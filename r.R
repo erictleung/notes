@@ -374,3 +374,7 @@ as.vector(t(m)) # Go by rows
 # check dimension names of object
 # source: https://stackoverflow.com/a/32314627/
 dimnames(iris)
+
+# create timestamp
+timestamp()
+##------ Mon Jan 14 16:55:31 2019 ------##
