@@ -378,3 +378,17 @@ dimnames(iris)
 # create timestamp
 timestamp()
 ##------ Mon Jan 14 16:55:31 2019 ------##
+
+# scale values
+x <- matrix(1:9, 3, 3)
+scale(x)
+#      [,1] [,2] [,3]
+# [1,]   -1   -1   -1
+# [2,]    0    0    0
+# [3,]    1    1    1
+
+# symbolic number coding with symnum
+ii <- setNames(0:8, 0:8)
+symnum(ii, cut = 2*(0:4), sym = c(".", "-", "+", "$"))
+# 0 1 2 3 4 5 6 7 8
+# . . . - - + + $ $
