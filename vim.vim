@@ -112,3 +112,6 @@ set secure
 " word count buffer
 " Press g then Ctrl-g
 " E.g. Selected 6 of 358 Lines; 37 of 2281 Words; 186 of 13426 Bytes
+
+" confirm text substitutions with c
+" :%s/old/new/gc
