@@ -295,3 +295,8 @@ shuf -e $(seq 1 10)
 # -k = transform symlinks to directory into referent directory
 # -P = progress bar with partially transferred files
 rsync -avkP srcfile destfile
+
+# find files
+# source: https://www.binarytides.com/linux-find-command-examples/
+# General syntax:
+#   find location comparison-criteria search-term
