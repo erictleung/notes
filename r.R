@@ -392,3 +392,8 @@ ii <- setNames(0:8, 0:8)
 symnum(ii, cut = 2*(0:4), sym = c(".", "-", "+", "$"))
 # 0 1 2 3 4 5 6 7 8
 # . . . - - + + $ $
+
+# title case text
+# source: https://stat.ethz.ch/R-manual/R-devel/library/tools/html/toTitleCase.html
+tools::toTitleCase("Convert titles to title case.")
+# [1] "Convert Titles to Title Case."
