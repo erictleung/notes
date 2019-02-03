@@ -121,3 +121,22 @@ iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) +
   theme(axis.title.x = element_text(hjust = 0.25, vjust = 7))
 # draw ellipses around scatterplot clusters
 # default, 95% of data drawn around
+
+
+# tidyr ----------------------------------------------------------------
+library(tidyr)
+
+# conditionally mutate nested file
+# mutates only the setosa species
+iris %>%
+  as_tibble() %>%
+  nest(-Species) %>%
+  mutate(data = if_else(
+    Species == "setosa",
+    purrr::map(data, function(df) {
+      df %>%
+        mutate(Sepal.Length = Sepal.Length * 10)
+    }),
+    data
+  )) %>%
+  unnest()
