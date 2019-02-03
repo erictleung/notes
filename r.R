@@ -274,13 +274,6 @@ R.version.string
 version
 compareVersion("1.1.0", "1.1.3")  # check versions of R
 
-# extract substring easily with stringr
-library(stringr)
-str_extract("I want the word James", regex("James"))
-# [1] "James"
-str_extract("2017-09-22_file-1_work-stuff", regex("file-[0-9]{1,3}"))
-# [1] "file-1"
-
 # reorder factor levels
 # source: https://www.r-bloggers.com/reorder-factor-levels/
 x <- factor(sample(letters[1:5], 100, replace = TRUE))
@@ -344,11 +337,6 @@ tabulate(c(2,3,5), nbin = 10) # [1] 0 1 1 0 1 0 0 0 0 0
 # generalized rename of data frame columns
 # source: https://stackoverflow.com/a/16490387/
 names(df)[names(df) == 'old.var.name'] <- 'new.var.name'
-
-# row-wise sums
-# source: https://stackoverflow.com/a/31219524/
-iris %>% mutate(sum = Reduce("+", .[1:4])) # use magrittr pipe
-iris$sum <- rowSums(iris[, 1:4]) # base function
 
 # access table elements
 # source: https://stackoverflow.com/a/10104448/
