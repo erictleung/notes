@@ -385,3 +385,15 @@ symnum(ii, cut = 2*(0:4), sym = c(".", "-", "+", "$"))
 # source: https://stat.ethz.ch/R-manual/R-devel/library/tools/html/toTitleCase.html
 tools::toTitleCase("Convert titles to title case.")
 # [1] "Convert Titles to Title Case."
+
+# apply over environments
+a <- 1:10; beta <- exp(-3:3); logic <- c(T, F, F, T)
+eapply(env = globalenv(), mean)
+# $`a`
+# [1] 5.5
+#
+# $logic
+# [1] 0.5
+#
+# $beta
+# [1] 4.535125
