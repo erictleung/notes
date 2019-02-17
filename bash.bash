@@ -300,3 +300,7 @@ rsync -avkP srcfile destfile
 # source: https://www.binarytides.com/linux-find-command-examples/
 # General syntax:
 #   find location comparison-criteria search-term
+
+# stop process by process ID
+top # or htop to find PID of frozen application
+kill -9 PID # put PID as the number found in top/htop
