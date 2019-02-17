@@ -302,5 +302,6 @@ rsync -avkP srcfile destfile
 #   find location comparison-criteria search-term
 
 # stop process by process ID
+# source: https://stackoverflow.com/a/2775093
 top # or htop to find PID of frozen application
 kill -9 PID # put PID as the number found in top/htop
