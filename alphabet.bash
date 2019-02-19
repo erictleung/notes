@@ -76,6 +76,7 @@ mv
 ## N
 nano
 ncal # displays a side-ways calendar
+nohup # run command immune to hangups
 
 ## O
 open
