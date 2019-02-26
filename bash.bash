@@ -305,3 +305,6 @@ rsync -avkP srcfile destfile
 # source: https://stackoverflow.com/a/2775093
 top # or htop to find PID of frozen application
 kill -9 PID # put PID as the number found in top/htop
+
+# to delete symlin dir, make sure no leading slash
+# source: https://stackoverflow.com/a/210133
