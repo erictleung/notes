@@ -79,6 +79,7 @@ ncal # displays a side-ways calendar
 nohup # run command immune to hangups
 
 ## O
+od # dump files in octal and other formats
 open
 
 ## P
