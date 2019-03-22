@@ -115,3 +115,18 @@ set secure
 
 " confirm text substitutions with c
 " :%s/old/new/gc
+
+" use mouse to highlight
+set mouse=a
+
+" automatically reselect previously highlighted areas
+" gv
+
+" quick search back and forth
+" * and # while cursor over word
+
+" delete lines that contain "word"
+" :g/word/d
+
+" delete lines that dont' match "word"
+" :v/word/d
