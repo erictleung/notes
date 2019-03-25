@@ -308,3 +308,7 @@ kill -9 PID # put PID as the number found in top/htop
 
 # to delete symlin dir, make sure no leading slash
 # source: https://stackoverflow.com/a/210133
+
+# watch directory for changes when constantly changing
+# source: https://askubuntu.com/a/231701
+watch ls -l /usr/
