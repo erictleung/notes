@@ -397,3 +397,7 @@ eapply(env = globalenv(), mean)
 #
 # $beta
 # [1] 4.535125
+
+# formatted strings like in C
+# source: https://stackoverflow.com/a/13023329/
+printf <- function(...) invisible(print(sprintf(...)))
