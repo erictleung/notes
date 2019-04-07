@@ -312,3 +312,7 @@ kill -9 PID # put PID as the number found in top/htop
 # watch directory for changes when constantly changing
 # source: https://askubuntu.com/a/231701
 watch ls -l /usr/
+
+# recursive search for string in files
+# source: https://stackoverflow.com/a/17231293/
+grep -r "foo" /home/thisuser/bar/baz/
