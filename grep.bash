@@ -4,11 +4,16 @@
 grep hello *
 
 # recursively search all files for a string
-# source: https://stackoverflow.com/a/15622352/6873133
+# source: https://stackoverflow.com/a/15622352/
+# source: https://stackoverflow.com/a/16957078/
 cd /path/you/want
 grep -r "word" .
 grep -ir "WoRd" .  # ignores case
 grep -R "word" dir/ # alt flag of -R
+# -r recursive
+# -n line number
+# -w whole word
+grep -rnw '/path/to/somewhere/' -e 'pattern'
 
 # grep is suppress file name if given one file
 grep grep grep.bash
