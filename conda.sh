@@ -40,3 +40,9 @@ conda remove unusedPkge  # uninstall/remove unnecessary packages
 # source: https://stackoverflow.com/a/42660674/
 echo $CONDA_DEFAULT_ENV  # Environment name
 echo $CONDA_PREVIX       # Environment path
+
+# Remove unextracted tarballs
+conda clean -t
+
+# Remove extract packages that are not currently linked into an environment
+conda clean -p
