@@ -74,6 +74,9 @@ mtcars %>%
 # ggplot2 --------------------------------------------------------------
 require(ggplot2)
 
+# useful resources
+# - http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization
+
 # useful ggplot2 extensions or compatible packages
 # - Publication ready plots https://github.com/kassambara/ggpubr
 # - Composer of ggplot2s
