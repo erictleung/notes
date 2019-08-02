@@ -401,3 +401,13 @@ eapply(env = globalenv(), mean)
 # formatted strings like in C
 # source: https://stackoverflow.com/a/13023329/
 printf <- function(...) invisible(print(sprintf(...)))
+
+# suppress printing rownames and numbers of data frame
+# source: https://stackoverflow.com/a/24428226/
+df1 <- data.frame(values = rnorm(3), group = letters[1:3],
+                  row.names = paste0("RowName", 1:3))
+print(df1)
+#            values group
+#RowName1 -1.469809     a
+#RowName2 -1.164943     b
+#RowName3  0.899430     c
