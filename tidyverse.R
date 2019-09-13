@@ -125,6 +125,25 @@ iris %>% ggplot(aes(Sepal.Length, Sepal.Width)) +
 # draw ellipses around scatterplot clusters
 # default, 95% of data drawn around
 
+# reorder bars in barplot based on other variable
+# source: https://stackoverflow.com/a/25664367/
+corr.m <- structure(list(miRNA = structure(c(5L, 2L, 3L, 6L, 1L, 4L),
+                                           .Label = c("mmu-miR-139-5p",
+                                                      "mmu-miR-1983",
+                                                      "mmu-miR-301a-3p",
+                                                      "mmu-miR-5097",
+                                                      "mmu-miR-532-3p",
+                                                      "mmu-miR-96-5p"),
+                                           class = "factor"),
+                         variable = structure(c(1L, 1L, 1L, 1L, 1L, 1L),
+                                              .Label = "pos",
+                                              class = "factor"),
+                         value = c(7L, 75L, 70L, 5L, 10L, 47L)),
+                    class = "data.frame",
+                    row.names = c("1", "2", "3", "4", "5", "6"))
+ggplot(corr.m, aes(x = reorder(miRNA, -value), y = value, fill = variable)) + 
+  geom_bar(stat = "identity")
+
 
 # tidyr ----------------------------------------------------------------
 library(tidyr)
