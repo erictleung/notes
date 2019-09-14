@@ -34,6 +34,16 @@ https://github.com/thoughtbot/til.
 [googleshell]: https://console.cloud.google.com/cloudshell
 [colab]: https://colab.research.google.com/
 
+## Sites Accessible Using `curl`
+
+```sh
+# Get weather updates
+curl wttr.in
+
+# Quick cheatsheet for programming languages
+curl cht.sh
+```
+
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
