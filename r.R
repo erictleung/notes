@@ -411,3 +411,8 @@ print(df1)
 #RowName1 -1.469809     a
 #RowName2 -1.164943     b
 #RowName3  0.899430     c
+
+# load multiple packages at once
+# source: https://stackoverflow.com/q/8175912/
+x <- c("plyr", "psych", "tm")
+lapply(x, require, character.only = TRUE)
