@@ -199,7 +199,7 @@ git pull origin branch-name
 git checkout -b new-branch origin/new-branch # sub origin for remote name
 
 # similar to above but more extensive
-# source: https://stackoverflow.com/a/5884825/
+# source: https://stackoverflow.com/a/5884825/6873133
 git remote add coworker git://path/to/coworkers/repo.git
 git fetch cowork # track remote branches
 git checkout --track coworker/foo  # setup local branch foo
@@ -213,6 +213,11 @@ git branch -u upstream/foo # where upstream is remote and foo is branch
 # pull remote branch to local from scratch
 # source: https://stackoverflow.com/a/9537923/6873133
 git checkout --track origin/interesting-branch
+
+# pull upstream remote branch to local
+# context: deleted local branch, wanted to track upstream branch
+# source: https://stackoverflow.com/a/11278576/6873133
+git branch -f --track my_local_branch upstream/my_remote_branch
 
 # misc commands --------------------------------------------------------
 
@@ -229,7 +234,7 @@ git bundle verify ../commits.bundle # verify commits in case missing
 git fetch ../commits.bundle master:other-master # move commits to branch
 
 # retrieve hash for last commit
-# source: https://stackoverflow.com/a/949391/
+# source: https://stackoverflow.com/a/949391/6873133
 git rev-parse HEAD
 git rev-parse --verfy HEAD
 
