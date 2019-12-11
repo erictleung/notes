@@ -1,6 +1,12 @@
 # SLURM Notes
 
-# resources
+# Overview
+# - Resources
+# - SLURM job submit scripts notes
+# - Command-line notes
+
+# Resources -------------------------------------------------------------------
+
 # - General Exacloud Training Workshop by Ted Laderas
 #     https://laderast.github.io/exacloud_tutorial/
 # - Multiple serial programs as single SLURM job
@@ -15,12 +21,18 @@
 # - Submitting large jobs
 #     https://www.rc.fas.harvard.edu/resources/documentation/submitting-large-numbers-of-jobs-to-odyssey/
 
+
+# SLURM job submit scripts notes ----------------------------------------------
+
 # useful #SBATCH parameters and brief explanations
 #SBATCH --ntasks-per-core
 #SBATCH --ntasks-per-node
 
 # default one task/node, but --cpus-per-task will change default
 #SBATCH --ntasks=3
+
+
+# Command-line notes ----------------------------------------------------------
 
 # List accessible partitions
 scontrol show partition
@@ -41,3 +53,7 @@ squeue -lu $USER
 
 # look at job submit script information
 scontrol show jobid -dd <jobid>
+
+# queue information with time limit
+# https://curc.readthedocs.io/en/latest/running-jobs/slurm-commands.html
+squeue -u <USER> --long
