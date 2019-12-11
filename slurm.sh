@@ -55,6 +55,9 @@ squeue -lu $USER # scroll through your jobs
 # look at job submit script information
 scontrol show jobid -dd <jobid>
 
+# show job priority information
+sprio
+sprio -l # more useful info like adding usernames to job IDs
 
 # Custom functions ------------------------------------------------------------
 
