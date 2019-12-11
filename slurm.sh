@@ -4,6 +4,7 @@
 # - Resources
 # - SLURM job submit scripts notes
 # - Command-line notes
+# - Custom functions
 
 # Resources -------------------------------------------------------------------
 
@@ -47,13 +48,27 @@ sbatch -options batch_job_file
 # cancel job submitted, e.g. job 1234
 scancel 1234
 
-# look at current jobs
-squeue
-squeue -lu $USER
+# look at all current jobs and your
+squeue | less    # scroll through all jobs
+squeue -lu $USER # scroll through your jobs
 
 # look at job submit script information
 scontrol show jobid -dd <jobid>
 
-# queue information with time limit
-# https://curc.readthedocs.io/en/latest/running-jobs/slurm-commands.html
-squeue -u <USER> --long
+
+# Custom functions ------------------------------------------------------------
+
+# quickly create interactive session
+# note: edit partition name (shown below is light) for your use case
+function sint () {
+  if [ -z "$1" ] || [ -z "$1" ] || [ -z "$1" ]; then
+    echo "Usage:"
+    echo "  sint [time] [cpus_per_task] [memory]"
+    echo ""
+    echo "  time (e.g., 2:00:00 for two hours)"
+    echo "  cpus_per_task (e.g., 4 for four cores)"
+    echo "  memory (e.g., 1024 for 1GB of memory)"
+  else
+    srun --pty --time=$1 -c $2 --mem $3 -p light bash
+  fi
+}
