@@ -61,6 +61,7 @@ kill
 
 ## L
 less
+lftp # sophisticated file transfer program
 ln
 ls
 lsof # list open files
