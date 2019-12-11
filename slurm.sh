@@ -10,6 +10,10 @@
 # - SLURM sbatch script and command-line equivalents
 #     https://its.unc.edu/research-computing/techdocs/longleaf-slurm-examples/
 # - SLURM srun vs sbatch https://stackoverflow.com/a/43799481/6873133
+# - SLURM troubleshooting
+#     https://wiki.rc.hms.harvard.edu/display/O2/Troubleshooting+Slurm+Jobs
+# - Submitting large jobs
+#     https://www.rc.fas.harvard.edu/resources/documentation/submitting-large-numbers-of-jobs-to-odyssey/
 
 # useful #SBATCH parameters and brief explanations
 #SBATCH --ntasks-per-core
