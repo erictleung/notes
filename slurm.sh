@@ -2,13 +2,14 @@
 
 # resources
 # - General Exacloud Training Workshop by Ted Laderas
-#   https://laderast.github.io/exacloud_tutorial/
+#     https://laderast.github.io/exacloud_tutorial/
 # - Multiple serial programs as single SLURM job
-#   https://oncomputingwell.princeton.edu/2018/10/how-to-run-multiple-serial-programs-as-a-single-slurm-job/
+#     https://oncomputingwell.princeton.edu/2018/10/how-to-run-multiple-serial-programs-as-a-single-slurm-job/
 # - Convenience SLURM commands
-#   https://www.rc.fas.harvard.edu/resources/documentation/convenient-slurm-commands/
+#     https://www.rc.fas.harvard.edu/resources/documentation/convenient-slurm-commands/
 # - SLURM sbatch script and command-line equivalents
-#   https://its.unc.edu/research-computing/techdocs/longleaf-slurm-examples/
+#     https://its.unc.edu/research-computing/techdocs/longleaf-slurm-examples/
+# - SLURM srun vs sbatch https://stackoverflow.com/a/43799481/6873133
 
 # useful #SBATCH parameters and brief explanations
 #SBATCH --ntasks-per-core
