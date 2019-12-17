@@ -51,6 +51,8 @@ scancel 1234
 # look at all current jobs and your
 squeue | less    # scroll through all jobs
 squeue -lu $USER # scroll through your jobs
+watch squeue -u $USER --long # monitor your jobs and time
+watch -d squeue -u $USER --long # monitor jobs and see changes per interval
 
 # look at job submit script information
 scontrol show jobid -dd <jobid>
