@@ -60,3 +60,11 @@ functionName("input")
 
 # functional programming introduction (un-Pythonic patterns)
 # source: https://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming
+
+# run simple server
+# https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+# if Python version returned above is 3.X
+# python3 -m http.server
+# on windows try "python" instead of "python3"
+# if Python version returned above is 2.X
+python -m SimpleHTTPServer
