@@ -316,3 +316,8 @@ watch ls -l /usr/
 # recursive search for string in files
 # source: https://stackoverflow.com/a/17231293/
 grep -r "foo" /home/thisuser/bar/baz/
+
+# rename files in given directory with pattern
+# note: change *.dat for files and the regex-like replacement
+# source: https://stackoverflow.com/a/17789186/6873133
+for file in *.dat ; do mv $file ${file//ABC/XYZ} ; done
