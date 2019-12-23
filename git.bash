@@ -1,6 +1,7 @@
 # git Notes
 
 # overview of cheatsheet
+# - general commands
 # - configuration
 # - commit related
 # - git remotes
@@ -8,6 +9,30 @@
 
 # some cool tips on git
 # source: https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
+
+# general commands
+git add      # add files and changes
+git commit   # make change
+git pull     # update local
+git push     # update remotes
+git gc       # general housekeeping tasks
+git config   # change configuration
+git reset    # change commits
+git restore  # undo commits
+git stash    # hold temporary changes
+git checkout # move to different branches or commits
+git branch   # manage branches
+git clean    # remove untracked files
+git rm       # remove tracked files
+git diff     # see changes
+git revert   # undo commit
+git show     # display commit changes
+git log      # display history
+git remote   # see remove repositories
+git merge    # join branches
+git rebase   # move branches along timeline
+git clone    # copy repository locally
+git fetch    # get general updates
 
 # configuration commands -----------------------------------------------
 
