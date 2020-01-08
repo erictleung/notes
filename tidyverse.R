@@ -5,6 +5,7 @@
 # - dplyr
 # - ggplot2
 # - tidyr
+# - non-standard evaluation
 
 # stringr --------------------------------------------------------------
 library(stringr)
@@ -162,3 +163,19 @@ iris %>%
     data
   )) %>%
   unnest()
+
+
+# non-standard evalation ------------------------------------------------
+
+# use sym() to make quoted param into variable name
+# source: https://tidyeval.tidyverse.org/sec-up-to-speed.html#strings
+grouped_mean2 <- function(data, group_var, summary_var) {
+  group_var <- sym(group_var)
+  summary_var <- sym(summary_var)
+
+  data %>%
+    group_by(!!group_var) %>%
+    summarise(mean = mean(!!summary_var))
+}
+# E.g.
+grouped_mean2(data, "Snakes", "BMI")
