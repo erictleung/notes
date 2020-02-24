@@ -35,6 +35,7 @@ fdisk # help partition hard drive
 fg # moves background job to foreground
 file # determine file type
 find
+fmt # formats text
 
 ## G
 grep # regular expressions on file contents
