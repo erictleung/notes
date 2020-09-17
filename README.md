@@ -17,7 +17,6 @@ https://github.com/thoughtbot/til.
 - [Hyperpolyglot][poly]
 - [Learn X in Y Minutes][minutes]
 - [texblog][texblog]
-- [dply][dply] - Free cloud server for 2 hours
 - [Cloud Shell][googleshell] - Cloud shell by Google
 - [Google Colaboratory][colab] - Jupyter notebooks through Google Drive
 
