@@ -3,6 +3,7 @@
 Tips, notes, and TIL I find useful or interesting.
 
 Inspired by https://github.com/kbroman/ProgrammingNotes,
+https://github.com/simonw/til,
 https://github.com/jbranchaud/til, and 
 https://github.com/thoughtbot/til.
 
