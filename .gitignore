@@ -9,3 +9,6 @@
 *.out
 *.snm
 *.toc
+.Rproj.user
+
+/.quarto/
